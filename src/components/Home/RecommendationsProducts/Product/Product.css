@@ -1,0 +1,12 @@
+.carrousel-products{
+  border:2px solid blue;
+  width: 20px;
+  margin-right: 5px;
+}
+.carrousel-products img{
+  width: 224px;
+  height: 224px;
+}
+.carrousel-products h3{
+ padding: 15px;
+}

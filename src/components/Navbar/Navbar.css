@@ -1,0 +1,47 @@
+.navbar-container-navbar{
+  background-color:#fff159 ;
+  height: 100px;
+  padding-top: 10px;
+}
+.navbar-high, .navbar-down{
+  display: flex;  
+  justify-content: space-between;
+  height: auto;
+  max-width: 1200px;
+  margin:0 auto;
+}
+.navbar-input-search{
+  font-size: 16px;
+  line-height: 21px;
+  width: 598px;
+}
+
+.navbar-img-logo{
+  height: 34px;
+  top: 11px;
+  width: 134px;
+}
+.navbar-img-coronavirus{
+  max-width: 340px;
+  max-height: 39px;
+}
+.navbar-send{
+  width: 10%;
+}
+.navbar-list-center{
+  list-style: none;
+  display: flex;
+  width: 60%;
+  justify-content: space-around;
+}
+.navbar-list-right{
+  list-style: none;
+  display: flex;
+  width: 30%;
+  justify-content: space-around;
+}
+.navbar-item-array-center, .navbar-item-array-right{
+  line-height: 22px;
+  font-size: 14px;
+  color: rgba(51,51,51,.6);
+}

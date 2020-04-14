@@ -1,0 +1,22 @@
+.container-footer{
+background-color: white;
+}
+
+.container-footer-content{
+  width: 1200px;
+  display: flex;
+  margin: 0 auto;
+  text-align: center;
+  padding: 50px;
+}
+.container-footer-down{
+  display: flex;
+  margin: 0 auto;
+  width: 1200px;
+  text-align: center;
+}
+.container-footer-down ul{
+  display: flex;
+  list-style: none;
+
+}

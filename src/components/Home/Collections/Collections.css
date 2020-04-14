@@ -1,0 +1,33 @@
+.container-collection{
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+
+}
+section h3{
+  width: 1200px;
+  margin:0 auto;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+.container-text{
+  width: 30%;
+  background-color: white;
+}
+.container-text img{
+  width: 100%;
+  height: 280px;
+}
+
+.list-imagen{
+  display: flex;
+  width: 70%;
+  height: 100%;
+  flex-wrap: wrap-reverse;
+}
+.list-imagen img{
+  width: 180px;
+  height: 200px;
+  margin:15px;
+}
