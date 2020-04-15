@@ -31,7 +31,7 @@ class CarrouselProducts extends Component {
     }
 
     return (
-      <div className="container-carrousel-products">
+      <div className="container-slider-products">
         {products}
       </div>
     )

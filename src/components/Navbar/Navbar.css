@@ -28,6 +28,9 @@
 .navbar-send{
   width: 10%;
 }
+.hidden{
+  display: none;
+}
 .navbar-list-center{
   list-style: none;
   display: flex;
@@ -40,8 +43,65 @@
   width: 30%;
   justify-content: space-around;
 }
+.navbar-burguer{
+  display: none;
+}
 .navbar-item-array-center, .navbar-item-array-right{
   line-height: 22px;
   font-size: 14px;
   color: rgba(51,51,51,.6);
+}
+
+@media (max-width: 425px) {
+  .navbar-container-navbar{
+    width: 100%;
+    height: 90px;
+  }
+ .navbar-img-coronavirus{
+   display: none;
+ }
+ .navbar-list-center, .navbar-list-right{
+  display: none;
+ }
+ .navbar-send{
+  display: none;
+}
+ .hidden{
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+   font-family:"Proxima Nova", -apple-system, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+   color:rgb(115, 108, 40);
+ }
+ .hidden div{
+   display: flex;
+ }
+ .hidden div h4{
+   margin-right:8px;
+   margin-left: 8px;
+ }
+ .navbar-img-logo{
+  display: none;
+ }
+ .icon-hidden-one{
+  margin-top: 10px;
+  margin-left: 20px;
+  font-size: 20px;
+  color:rgb(115, 108, 40);
+ }
+ .navbar-input-search{
+   width: 69%;
+   height: 30px;
+ }
+ .navbar-burguer{
+   display: inline;
+   width: 10%;
+   list-style: none;
+   color:rgb(115, 108, 40);
+  }
+  .icon-hidden-one,.icon-hidden-two {
+    margin-top: 10px;
+    margin-right: 11px;
+    font-size: 20px;
+  }
 }

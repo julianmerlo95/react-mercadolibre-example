@@ -1,8 +1,8 @@
-import logo from '../../assets/img/logo.png';
 import coronavirus from '../../assets/img/coronavirus.png';
-
+import logo from '../../assets/img/logo.png';
 const arrayListCenter = [
-  { name: 'categoria' },
+  { name: 'categorias' },
+  { name: 'ofertas' },
   { name: 'Historial' },
   { name: 'Supermercador' },
   { name: 'Tiendas oficiales' },

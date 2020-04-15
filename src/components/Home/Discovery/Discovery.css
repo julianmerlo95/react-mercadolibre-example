@@ -20,5 +20,44 @@
 .discovery-leyend{
   width: 1200px;
   margin:0 auto;
-  margin-top:25px;
+  margin-top:40px;
+  color:rgb(102, 102, 102);
+  font-family:"Proxima Nova", -apple-system, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-size:20px;
+}
+
+@media (max-width: 425px) {
+  .container-discovery{
+    display: inline;
+    width: 100%;
+    margin:0 auto;
+  }
+  .discovery-left , .discovery-right{
+    width: 95%;
+    margin-bottom: 5%;
+    text-align: center;
+    text-transform: uppercase;
+    box-shadow:1px -1px 2px gray;
+    border-radius: 10px;
+    transition: 0.5s;
+  }
+  .discovery-left:hover , .discovery-right:hover{
+    cursor: pointer;
+    box-shadow:2px -1px 5px 1px gray;
+    transition: 0.5s;
+  }
+  .discovery-left button,  .discovery-right button{
+    width: 90%;
+    height: 30px;
+    border-radius: 5px;
+    background-color: blue;
+    color:white;
+  }
+}
+
+@media (max-width: 375px) {
+  .discovery-left img, .discovery-right img{
+    width: 100%;
+    height: 250px;
+  }
 }

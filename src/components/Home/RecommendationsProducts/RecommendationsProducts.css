@@ -1,6 +1,15 @@
-.container-carrousel-products{
+.container-slider-products{
   width: 1200px;
   height: 367px;
   margin: 0 auto;
   margin-top:50px;
+}
+
+@media (max-width: 425px) {
+  .container-slider-products{
+    width: 100%;
+    height: 367px;
+    margin: 0 auto;
+    margin-top:50px;
+  }
 }

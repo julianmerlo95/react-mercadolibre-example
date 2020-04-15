@@ -1,3 +1,5 @@
+
+import React from 'react';
 import imgCarrouselPrimary1 from '../../../assets/img/imgCarrouselPrimary1.webp';
 import imgCarrouselPrimary2 from '../../../assets/img/imgCarrouselPrimary2.webp';
 import imgCarrouselPrimary3 from '../../../assets/img/imgCarrouselPrimary3.webp';
@@ -9,11 +11,12 @@ import efect from '../../../assets/img/efect.svg';
 import viewMore from '../../../assets/img/view-more.svg';
 
 const settings = {
-  dots: true,
   infinite: true,
   speed: 500,
   slidesToShow: 1,
-  slidesToScroll: 1
+  slidesToScroll: 1,
+
+
 };
 
 const arrayImg = [imgCarrouselPrimary1, imgCarrouselPrimary2,

@@ -2,20 +2,27 @@ import React, { Component } from 'react';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import './CarrouselPrimary.css';
+import './SliderPrimary.css';
 import { settings, arrayImg, arrayPayments } from './data';
 
-class CarrouselPrimary extends Component {
+class SliderPrimary extends Component {
 
   render() {
     return (
-      <div >
-        <div className="carrousel-primary">
+      <React.Fragment >
+        <div className="slider-primary">
           <Slider {...settings} >
             {arrayImg.map((item, index) => <div key={index}><img src={item}></img></div>)}
           </Slider>
         </div>
         <div className="container-payments">
+          <div className="payments-method-hidden">
+            <img src={arrayPayments[0].img}></img>
+            <div>
+              <h2 className="title-payments">{arrayPayments[0].name}</h2>
+              <p className="description-payments">{arrayPayments[0].description}</p>
+            </div>
+          </div>
           {arrayPayments.map((item, index) => {
             return (
               <div key={index} className="payments-method">
@@ -28,9 +35,9 @@ class CarrouselPrimary extends Component {
             )
           })}
         </div>
-      </div>
+      </React.Fragment >
     );
   }
 }
 
-export default CarrouselPrimary;
+export default SliderPrimary;

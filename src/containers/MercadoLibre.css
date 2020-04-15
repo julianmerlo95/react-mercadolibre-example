@@ -1,0 +1,9 @@
+.hidden-section-movil{
+
+}
+
+@media (max-width: 425px) {
+  .hidden-section-movil{
+    display: none;
+  } 
+}
