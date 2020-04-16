@@ -2,12 +2,11 @@ import React from 'react';
 import './Discovery.css';
 import { arrayDiscovery } from './data';
 
-
 const Discovery = (props) => {
   return (
     <React.Fragment>
-      <h3 className="discovery-leyend">{props.leyend}</h3>
-      <secction className="container-discovery">
+      <h3 className="discovery-leyend style-font">{props.leyend}</h3>
+      <secction className="container-discovery ">
         {arrayDiscovery.map((item, index) => {
           return (
             <div key={index} className={item.textClass}>

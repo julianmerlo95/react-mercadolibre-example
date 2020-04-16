@@ -17,7 +17,7 @@ class MercadoLibre extends Component {
 
     if (window.screen.width > 1200) {
       showComponents = (<><ShowDesktop /></>)
-    } else if (window.screen.width <= 428) {
+    } else if (window.screen.width < 426) {
       showComponents = (<><ShowMovil /></>)
     }
 

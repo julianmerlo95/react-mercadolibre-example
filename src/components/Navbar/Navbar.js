@@ -8,7 +8,7 @@ const Navbar = () => {
     <div className="navbar-container-navbar">
 
       <div className="navbar-high">
-        <i class="fas fa-align-justify icon-hidden-one"></i>
+        <i class="fas fa-align-cart icon-hidden-one"></i>
         <img src={logo} className="navbar-img-logo"></img>
         <input className="navbar-input-search"></input>
         <img src={coronavirus} className="navbar-img-coronavirus"></img>

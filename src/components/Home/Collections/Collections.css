@@ -2,22 +2,43 @@
   display: flex;
   width: 1200px;
   margin: 0 auto;
-
 }
 section h3{
   width: 1200px;
-  margin:0 auto;
-  margin-top: 50px;
+  margin: 0 auto;
+  color:rgb(102, 102, 102);
+  font-size: 20px;
+  margin-top: 5%;
   margin-bottom: 20px;
+  font: 20px;
 }
 
 .container-text{
   width: 30%;
   background-color: white;
+  text-transform: uppercase;
+  border-radius: 5px;
+  transition: 0.5s;
 }
+.container-text:hover{
+  box-shadow: 0px 0px 3px 1px rgb(167, 167, 167);
+  transition: 0.5s;
+  cursor: pointer;
+}
+
 .container-text img{
   width: 100%;
-  height: 280px;
+  border-radius: 10px;
+  margin: 0 auto;
+  height: 70%;
+}
+
+.container-text h5{
+  margin-left: 15px;
+}
+.container-text h4{
+  margin-left: 15px;
+  font-size: 20px;
 }
 
 .list-imagen{
@@ -26,13 +47,26 @@ section h3{
   height: 100%;
   flex-wrap: wrap-reverse;
 }
+
 .list-imagen img{
   width: 180px;
-  height: 200px;
+  height: 100%;
   margin:15px;
+  transition: 0.5s;
+  border-radius: 5px;
+}
+
+.list-imagen img:hover{
+  box-shadow: 0px 0px 10px 1px rgb(167, 167, 167);
+  transition: 0.5s;
+  cursor: pointer;
 }
 
 @media (max-width: 425px) {
+  section h3{
+    margin-top: 18%;
+    margin-left: 5px;
+  }
   .container-collection{
     display: inline;
     width: 100%;
@@ -42,23 +76,21 @@ section h3{
     width: 95%;
     margin:0 auto;
     text-transform: uppercase;
-    box-shadow:1px -1px 2px gray;
     border-radius: 10px;
     transition: 0.5s;
   }
   .list-imagen{
-    width: 100%;
+    width: 110%;
     flex-wrap: wrap;
   }
   .list-imagen img{
     flex-wrap: wrap;
-    box-shadow:1px -1px 2px gray;
-    border-radius: 10px;
+    border-radius: 5px;
     transition: 0.5s;
   }
-  .list-imagen img:hover, .container-text:hover{
+  .list-imagen img:hover,
+   .container-text:hover{
     cursor: pointer;
-    box-shadow:2px -1px 5px 1px gray;
     transition: 0.5s;
   }
 }
@@ -67,6 +99,7 @@ section h3{
     display: inline;
     width: 100%;
     height: 100px;
+    margin-top: 150px;
   }
   .list-imagen{
     width: 100%;
@@ -83,5 +116,13 @@ section h3{
     cursor: pointer;
     box-shadow:2px -1px 5px 1px gray;
     transition: 0.5s;
+  }
+}
+@media (max-width: 320px) {
+  section h3{
+    margin-top: 30%;
+  }
+  .list-imagen{
+    display: none;
   }
 }

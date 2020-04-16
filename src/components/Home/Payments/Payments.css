@@ -1,7 +1,7 @@
 .container-payments{
   display: flex;
   justify-content: space-around;
-  width: 1150px;
+  width: 1200px;
   margin:0 auto;
   background-color:white;
   margin-top:30px;
@@ -20,19 +20,12 @@
   margin-right: 20px;
 }
 .title-payments{
-  font-family:"Proxima Nova", 
-  -apple-system, "Helvetica Neue", 
-  Helvetica, Roboto, Arial, sans-serif;
   font-size:17px;
 }
 .description-payments{
   color:rgb(52, 131, 250);
   cursor:pointer;
   display:inline;
-  font-family:"Proxima Nova", 
-  -apple-system, "Helvetica Neue", 
-  Helvetica, Roboto, Arial, sans-serif;
-  font-size:14px;
 }
 @media (max-width: 425px) {
   .container-payments{

@@ -6,12 +6,15 @@ import './RecommendationsProducts.css';
 class CarrouselProducts extends Component {
 
   state = {
-    products: []
+    products: [],
+    free_shipping: true
   }
 
   componentDidMount = async () => {
     const response = await Axios.get(this.props.products);
     this.setState({ products: response.data.results });
+    console.log(this.state.products);
+
   }
 
   render() {

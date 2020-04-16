@@ -9,7 +9,7 @@ const ShowMovil = () => {
   return (
     <>
       <RecommendationsProducts
-        products="samsung"
+        products="macbook pro"
         leyend="Basado en tu última visita"
         leyendAdici="Ver historial" />
 

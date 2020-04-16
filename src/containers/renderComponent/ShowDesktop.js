@@ -9,7 +9,7 @@ const ShowDesktop = () => {
   return (
     <>
       <RecommendationsProducts
-        products="samsung"
+        products="macbook pro"
         leyend="Basado en tu última visita"
         leyendAdici="Ver historial" />
 
@@ -19,7 +19,7 @@ const ShowDesktop = () => {
         leyendAdici="Computación Ver historial" />
 
       <RecommendationsProducts
-        products="iphone"
+        products="samsung"
         leyend="Ofertas"
         leyendAdici="Ver todas" />
       <Discovery

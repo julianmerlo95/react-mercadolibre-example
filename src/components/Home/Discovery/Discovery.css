@@ -4,25 +4,23 @@
   margin:0 auto;
 }
 .discovery-leyend{
-  width: 60.5%;
+  width: 62.3%;
   margin:0 auto;
   text-align: left;
   margin-bottom: 1%;
   margin-top: 5%;
   color:rgb(102, 102, 102);
-  font-family:"Proxima Nova", 
-  -apple-system, "Helvetica Neue", 
-  Helvetica, Roboto, Arial, sans-serif;
   font-size:22px;
 }
 .discovery-left, .discovery-right{
   display: flex;
   margin:10px;
-  box-shadow: 0px 0px 3px gray;
+  box-shadow: 0px 0px 2px gray;
   transition: 0.5s;
+  border-radius: 5px;
 }
 .discovery-left:hover, .discovery-right:hover{
-  box-shadow: 0px 0px 3px 1px gray;
+  box-shadow: 0px 0px 3px 1px rgb(167, 167, 167);
   cursor: pointer;
 }
 .discovery-left h3 , .discovery-right h3 ,  
@@ -32,12 +30,12 @@
   margin-top: 45px;
 }
 .discovery-left button,  .discovery-right button{
-  width: 80%;
+  width: 90%;
   height: 30px;
   border-radius: 5px;
   background-color: blue;
   color:white;
-  margin-left: 28px;
+  margin-left: 6px;
   }
 .discovery-left img, .discovery-right img{
   width: 280px;

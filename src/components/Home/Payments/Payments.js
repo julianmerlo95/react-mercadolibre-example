@@ -4,7 +4,7 @@ import './Payments.css';
 
 const PaymentsMethod = () => {
   return (
-    <div className="container-payments">
+    <div className="container-payments style-font standar-width ">
       <div className="payments-method-hidden">
         <img src={arrayPayments[0].img}></img>
         <div>

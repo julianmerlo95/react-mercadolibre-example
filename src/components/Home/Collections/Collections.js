@@ -5,12 +5,14 @@ import './Collections.css'
 const Collections = () => {
   return (
     <section>
-      <h3>Colecciones: De fiesta</h3>
+      <h3 className="style-font">Colecciones: De fiesta</h3>
       <div className="container-collection">
-        <div className="container-text">
+        <div className="container-text shadow">
           <img src={deFiesta}></img>
-          <h3>Descubri</h3>
-          <h4>De fiesta</h4>
+          <div>
+            <h5>Descubri</h5>
+            <h4>De fiesta</h4>
+          </div>
         </div>
         <div className="list-imagen">
           {arrayImg.map((img, index) => <img key={index} src={img}></img>)}
