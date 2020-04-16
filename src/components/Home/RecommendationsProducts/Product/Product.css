@@ -1,43 +1,76 @@
-.slider-products{
+.container-leyend{
+  display: flex;
+  justify-content: space-between;
+}
+.container-leyend h3{
+  margin-left:2%;
+}
+.container-leyend h4{
+  color:rgb(52, 131, 250);
+  margin-right:2%;
+  cursor:pointer;
+  font-family:"Proxima Nova", 
+  -apple-system, "Helvetica Neue", 
+  Helvetica, Roboto, Arial, sans-serif;
+  font-size:16px;
+ }
+ .leyend-slider{
+  color:rgb(102, 102, 102);
+  font-family:"Proxima Nova",
+   -apple-system, "Helvetica Neue", 
+   Helvetica, Roboto, Arial, sans-serif;
+  font-size:26px;
+ }
+ .slider-products{
   margin-right: 5px;
   background-color: white;
-  margin:10px;
-  box-shadow:1px -1px 2px gray;
-  border-radius: 10px;
+  margin:12px;
+  box-shadow: 0px 0px 1px gray;
+  border-radius: 5px;
   transition: 0.5s;
 }
 .slider-products:hover{
   cursor: pointer;
-  box-shadow:2px -1px 5px 1px gray;
+  box-shadow: 0px 0px 5px 1px rgb(189, 189, 189);
   transition: 0.5s;
 }
-.slider-products img{
-  width: 209px;
+ .slider-products img{
+  width: 97%;
+  display: block;
+  margin:0 auto;
   height: 224px;
+  border-bottom: 1px solid rgb(209, 209, 209);
 }
 .slider-products h3{
  padding: 13px;
  box-sizing:border-box;
  color:rgb(51, 51, 51);
- font-family:"Proxima Nova", -apple-system, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+ font-family:"Proxima Nova", 
+ -apple-system, "Helvetica Neue", 
+ Helvetica, Roboto, Arial, sans-serif;
  font-size:24px;
 }
-.leyend-slider{
- color:rgb(102, 102, 102);
- display:block;
- font-family:"Proxima Nova", -apple-system, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
- font-size:26px;
+.icon-shipping{
+  position: absolute;
+  margin-left: 165px;
+  margin-top: 209px;
+  color: #39b54a;
+  border:1px solid rgb(209, 209, 209);
+  padding: 6px;
+  border-radius:150px;
 }
 
 @media (max-width: 425px) {
   .slider-products img{
-    width: 100%;
+    width: 95%;
+    margin:0 auto;
     height: 224px;
   }
   .leyend-slider{
     color:rgb(102, 102, 102);
-    display:block;
-    font-family:"Proxima Nova", -apple-system, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+    font-family:"Proxima Nova", 
+    -apple-system, "Helvetica Neue",
+     Helvetica, Roboto, Arial, sans-serif;
     font-size:20px;
    }
 }

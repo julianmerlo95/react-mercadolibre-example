@@ -3,11 +3,42 @@
   width: 1200px;
   margin:0 auto;
 }
+.discovery-leyend{
+  width: 60.5%;
+  margin:0 auto;
+  text-align: left;
+  margin-bottom: 1%;
+  margin-top: 5%;
+  color:rgb(102, 102, 102);
+  font-family:"Proxima Nova", 
+  -apple-system, "Helvetica Neue", 
+  Helvetica, Roboto, Arial, sans-serif;
+  font-size:22px;
+}
 .discovery-left, .discovery-right{
   display: flex;
   margin:10px;
-  border-radius: 5px;
+  box-shadow: 0px 0px 3px gray;
+  transition: 0.5s;
 }
+.discovery-left:hover, .discovery-right:hover{
+  box-shadow: 0px 0px 3px 1px gray;
+  cursor: pointer;
+}
+.discovery-left h3 , .discovery-right h3 ,  
+.discovery-left h4 , .discovery-right h4{
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 45px;
+}
+.discovery-left button,  .discovery-right button{
+  width: 80%;
+  height: 30px;
+  border-radius: 5px;
+  background-color: blue;
+  color:white;
+  margin-left: 28px;
+  }
 .discovery-left img, .discovery-right img{
   width: 280px;
   height: 250px;
@@ -16,15 +47,9 @@
   width: 290px;
   height: 250px;
   background-color: white;
+  border-radius: 5px;
 }
-.discovery-leyend{
-  width: 1200px;
-  margin:0 auto;
-  margin-top:40px;
-  color:rgb(102, 102, 102);
-  font-family:"Proxima Nova", -apple-system, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
-  font-size:20px;
-}
+
 
 @media (max-width: 425px) {
   .container-discovery{
@@ -32,14 +57,14 @@
     width: 100%;
     margin:0 auto;
   }
+  .discovery-leyend{
+    width: 100%;
+    margin-top: 15%;
+    margin-left: 3%;
+    margin-bottom: 5%;
+  }
   .discovery-left , .discovery-right{
     width: 95%;
-    margin-bottom: 5%;
-    text-align: center;
-    text-transform: uppercase;
-    box-shadow:1px -1px 2px gray;
-    border-radius: 10px;
-    transition: 0.5s;
   }
   .discovery-left:hover , .discovery-right:hover{
     cursor: pointer;

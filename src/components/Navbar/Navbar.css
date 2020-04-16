@@ -53,12 +53,12 @@
 }
 
 @media (max-width: 425px) {
-  .navbar-container-navbar{
-    width: 100%;
-    height: 90px;
-  }
- .navbar-img-coronavirus{
-   display: none;
+.navbar-container-navbar{
+  width: 100%;
+  height: 90px;
+}
+.navbar-img-coronavirus{
+  display: none;
  }
  .navbar-list-center, .navbar-list-right{
   display: none;
@@ -70,7 +70,8 @@
    width: 100%;
    display: flex;
    justify-content: space-between;
-   font-family:"Proxima Nova", -apple-system, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+   font-family:"Proxima Nova", -apple-system, 
+   "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
    color:rgb(115, 108, 40);
  }
  .hidden div{

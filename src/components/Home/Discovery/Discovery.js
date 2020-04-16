@@ -1,5 +1,6 @@
 import React from 'react';
 import './Discovery.css';
+import { arrayDiscovery } from './data';
 
 
 const Discovery = (props) => {
@@ -7,29 +8,22 @@ const Discovery = (props) => {
     <React.Fragment>
       <h3 className="discovery-leyend">{props.leyend}</h3>
       <secction className="container-discovery">
-        <div className="discovery-left">
-          <div>
-            <h3>!Nuevo filtro!</h3>
-            <h4>Envio con normalidad</h4>
-            <button>Ver mas</button>
-          </div>
-          <div>
-            <img src={props.imgLeft}></img>
-          </div>
-        </div>
-        <div className="discovery-right">
-          <div>
-            <h3>codo a codo</h3>
-            <h4>!sumate donando</h4>
-            <button>Ver mas</button>
-          </div>
-          <div>
-            <img src={props.imgRight}></img>
-          </div>
-        </div>
+        {arrayDiscovery.map((item, index) => {
+          return (
+            <div key={index} className={item.textClass}>
+              <div>
+                <h3>{item.title}</h3>
+                <h4>{item.description}</h4>
+                <button>{item.textButton}</button>
+              </div>
+              <div>
+                <img src={item.image}></img>
+              </div>
+            </div>
+          )
+        })}
       </secction>
     </React.Fragment>
-
   )
 }
 

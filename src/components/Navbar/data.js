@@ -1,6 +1,6 @@
 import coronavirus from '../../assets/img/coronavirus.png';
 import logo from '../../assets/img/logo.png';
-const arrayListCenter = [
+const arrayListDownCenter = [
   { name: 'categorias' },
   { name: 'ofertas' },
   { name: 'Historial' },
@@ -10,7 +10,7 @@ const arrayListCenter = [
   { name: 'Ayuda' }
 ]
 
-const arrayListRight = [
+const arrayListDownRight = [
   { name: 'user' },
   { name: 'Mis compras' },
   { name: 'Favoritos' },
@@ -19,8 +19,8 @@ const arrayListRight = [
 ]
 
 export {
-  arrayListCenter,
-  arrayListRight,
+  arrayListDownCenter,
+  arrayListDownRight,
   logo,
   coronavirus
 }

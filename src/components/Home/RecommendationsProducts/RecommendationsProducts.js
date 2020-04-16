@@ -24,7 +24,7 @@ class CarrouselProducts extends Component {
           <Product
             leyend={this.props.leyend}
             products={this.state.products}
-            cantidadProduct={this.props.cantidadProduct}
+            leyendAdici={this.props.leyendAdici}
           />
         </React.Fragment>
       )

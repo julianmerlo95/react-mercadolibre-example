@@ -1,8 +1,9 @@
+
 const settings = {
   arrow: true,
   infinite: true,
   speed: 500,
-  slidesToShow: 4,
+  slidesToShow: 5,
   slidesToScroll: 4,
   responsive: [
     {
@@ -32,7 +33,7 @@ const settings = {
     {
       breakpoint: 375,
       settings: {
-        slidesToShow: 1,
+        slidesToShow: 2,
         slidesToScroll: 1
       }
     }
