@@ -3,7 +3,7 @@ import Axios from '../../../axios/axios';
 import Product from './Product/Product';
 import './RecommendationsProducts.css';
 
-class CarrouselProducts extends Component {
+class SliderPrimary extends Component {
 
   state = {
     products: [],
@@ -13,8 +13,6 @@ class CarrouselProducts extends Component {
   componentDidMount = async () => {
     const response = await Axios.get(this.props.products);
     this.setState({ products: response.data.results });
-    console.log(this.state.products);
-
   }
 
   render() {
@@ -41,4 +39,4 @@ class CarrouselProducts extends Component {
   }
 }
 
-export default CarrouselProducts;
+export default SliderPrimary;

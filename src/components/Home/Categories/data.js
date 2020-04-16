@@ -2,59 +2,59 @@
 const arrayCategories = [
   {
     title: "Autos, Motos y otros",
-    icon: "fas fa-car fa-7x"
+    icon: "icon-categories fas fa-car fa-7x"
   },
   {
     title: "Autos, Motos y otros",
-    icon: "fas fa-car fa-7x"
+    icon: "icon-categories fas fa-car fa-7x"
   },
   {
     title: "Autos, Motos y otros",
-    icon: "fas fa-car fa-7x"
+    icon: "icon-categories fas fa-car fa-7x"
   },
   {
     title: "Autos, Motos y otros",
-    icon: "fas fa-car fa-7x"
+    icon: "icon-categories fas fa-car fa-7x"
   },
   {
     title: "Autos, Motos y otros",
-    icon: "fas fa-car fa-7x"
+    icon: "icon-categories fas fa-car fa-7x"
   },
   {
     title: "Autos, Motos y otros",
-    icon: "fas fa-car fa-7x"
+    icon: "icon-categories fas fa-car fa-7x"
   },
   {
     title: "Autos, Motos y otros",
-    icon: "fas fa-car fa-7x"
+    icon: "icon-categories fas fa-car fa-7x"
   },
   {
     title: "Autos, Motos y otros",
-    icon: "fas fa-car fa-7x"
+    icon: "icon-categories fas fa-car fa-7x"
   },
   {
     title: "Autos, Motos y otros",
-    icon: "fas fa-car fa-7x"
+    icon: "icon-categories fas fa-car fa-7x"
   },
   {
     title: "Autos, Motos y otros",
-    icon: "fas fa-car fa-7x"
+    icon: "icon-categories fas fa-car fa-7x"
   },
   {
     title: "Autos, Motos y otros",
-    icon: "fas fa-car fa-7x"
+    icon: "icon-categories fas fa-car fa-7x"
   },
   {
     title: "Autos, Motos y otros",
-    icon: "fas fa-car fa-7x"
+    icon: "icon-categories fas fa-car fa-7x"
   },
   {
     title: "Autos, Motos y otros",
-    icon: "fas fa-car fa-7x"
+    icon: "icon-categories fas fa-car fa-7x"
   },
   {
     title: "Autos, Motos y otros",
-    icon: "fas fa-car fa-7x"
+    icon: "icon-categories fas fa-car fa-7x"
   },
 ]
 

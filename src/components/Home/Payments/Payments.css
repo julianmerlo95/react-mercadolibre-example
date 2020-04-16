@@ -15,9 +15,16 @@
 .payments-method-hidden{
   display: none;
 }
+.payments-method div{
+  margin-top: 5%;
+}
 .payments-method img{
   margin-left: 10px;
   margin-right: 20px;
+}
+.payments-method h2{
+  margin: 0%;
+  margin-top: 3%;
 }
 .title-payments{
   font-size:17px;

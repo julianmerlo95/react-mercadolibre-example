@@ -119,10 +119,7 @@ section h3{
   }
 }
 @media (max-width: 320px) {
-  section h3{
+  .container-primary{
     margin-top: 30%;
-  }
-  .list-imagen{
-    display: none;
   }
 }

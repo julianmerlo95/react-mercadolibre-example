@@ -4,7 +4,7 @@ import './Collections.css'
 
 const Collections = () => {
   return (
-    <section>
+    <section className="container-primary">
       <h3 className="style-font">Colecciones: De fiesta</h3>
       <div className="container-collection">
         <div className="container-text shadow">

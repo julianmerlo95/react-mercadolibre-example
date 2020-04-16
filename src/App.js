@@ -5,7 +5,7 @@ import Aux from './hoc/aux';
 function App() {
   return (
     <Aux>
-      <main style={{ backgroundColor: '#ebebeb' }}>
+      <main style={{ backgroundColor: '#ebebeb', width: '100%' }}>
         <MarcadoLibre />
       </main>
     </Aux>

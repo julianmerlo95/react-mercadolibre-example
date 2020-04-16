@@ -16,7 +16,6 @@
   height: 100%;
  }
  .leyend-slider{
-  color:rgb(138, 138, 138);
   letter-spacing: 1px;
   font-size:26px;
  }
@@ -43,7 +42,6 @@
 .slider-products-show:hover{
   cursor: pointer;
   box-shadow: 0px 2px 5px 3px rgb(211, 211, 211);
-  transition: 0.5s;
 }
  .img-product{
   width: 97%;
@@ -73,8 +71,9 @@
   margin:0% auto;
   text-align: center;
   display: inline-block;
-  color:rgb(138, 138, 138);
+  color:rgb(119, 116, 116);
   transition: 1s;
+  font-size: 12px;
 }
 .icon-shipping{
   position: absolute;

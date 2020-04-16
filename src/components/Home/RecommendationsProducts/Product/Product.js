@@ -12,12 +12,10 @@ const Product = (props) => {
   const [showHover, setShowHover] = useState(false);
 
   const showsHeightHandler = (index) => {
-    document.getElementById('product')
     setShowHover(index);
   }
 
   const hiddenHeightHandler = () => {
-    document.getElementById('product');
     setShowHover(false);
   }
 
@@ -31,15 +29,15 @@ const Product = (props) => {
       <Slider {...settings} >
         {props.products.map((product, index) => {
           return (
-            <div style={{ margin: '0px', width: '100%' }}>
-              <div id="product" key={index} className={`style-font slider-products${showHover === index ? '-show' : ""}`}
+            <>
+              <div key={index} className={`style-font slider-products${showHover === index ? '-show' : ""}`}
                 onMouseOver={() => showsHeightHandler(index)} onMouseLeave={hiddenHeightHandler}>
                 <span className="icon-shipping"><i class="fas fa-truck"></i></span>
                 <img className="img-product" src={product.thumbnail} ></img>
                 <h3 className="price-product">${product.price}</h3>
-                <p className={`style-font title-hidden-hover${showHover === index ? '-show' : ""}`}>{product.title}</p>
+                <p className={`style-font title-hidden-hover${showHover === index ? '-show' : ""}`}>{product.title.substr(0, 50)}</p>
               </div>
-            </div>
+            </>
           )
         })}
       </Slider>
