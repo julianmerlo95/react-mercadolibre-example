@@ -1,32 +1,33 @@
 import React from 'react';
-import arrayFooter from './data';
+import { arrayFooter, arrayFooterList } from './data';
 import './Footer.css'
 
 const Footer = () => {
   return (
-    <section className="container-footer">
-      <div className="container-footer-content">
+    <section className="footer">
+      <div className="footer__block__above">
         {arrayFooter.map((item, index) => {
           return (
-            <div className="container-footer-content-items" key={index}>
+            <div className=" footer__block__above__shipping" key={index}>
               <img src={item.img}></img>
-              <h4 className="style-font" >{item.title}</h4>
-              <p className="style-font descriptionPrimary">{item.descriptionPrimary}</p>
-              <p className="descriptionSecondary">{item.descriptionSecondary}</p>
+              <h4 className="footer__block__above__shipping__title  style-font" >{item.title}</h4>
+              <p className="footer__block__above__shipping__description--primary  style-font">{item.descriptionPrimary}</p>
+              <p className="footer__block__above__shipping__description--secondary">{item.descriptionSecondary}</p>
             </div>
           )
         })}
       </div>
-      <div className="container-footer-down">
-        <ul>
-          <li>Trabajá con nosotros</li>
-          <li>Términos y condiciones</li>
-          <li>Políticas de privacidad</li>
-          <li>Ayuda</li>
+      <div className="footer__block__down">
+        <ul className="footer__block__down__list">
+          {arrayFooterList.map((item, index) => <div key={index}>
+            <li className="footer__block__down__list__item">{item}</li>
+          </div>)}
         </ul>
         <div>
-          <h3 className="style-font button-meli"><i class="fas fa-mobile-alt"></i>
-          ¡Descargá gratis la app de Mercado Libre!</h3>
+          <h3 className="footer__block__down__button style-font">
+            <i class="fas fa-mobile-alt"></i>
+          ¡Descargá gratis la app de Mercado Libre!
+          </h3>
         </div>
       </div>
     </section>

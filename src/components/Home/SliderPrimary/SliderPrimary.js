@@ -10,13 +10,13 @@ class SliderPrimary extends Component {
 
   render() {
     return (
-      <div className="carrousel">
+      <section className="carrousel">
         <Slider {...settings} >
           {arrayImg.map((item, index) => <div key={index}>
-            <img className="carrousel" src={item}></img>
+            <img className="carrousel__img" src={item}></img>
           </div>)}
         </Slider>
-      </div>
+      </section>
     );
   }
 }

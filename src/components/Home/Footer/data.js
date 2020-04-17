@@ -23,4 +23,8 @@ const arrayFooter = [
   }
 ]
 
-export default arrayFooter;
+const arrayFooterList = ["Trabajá con nosotros", "Términos y condiciones", "Políticas de privacidad", "ayuda"]
+
+
+
+export { arrayFooter, arrayFooterList };

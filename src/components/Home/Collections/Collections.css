@@ -1,6 +1,7 @@
 .collections{
   width: 1200px;
   margin: 0 auto;
+  margin-top: 3%;
 }
 .collections__block{
   display: flex;

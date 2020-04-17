@@ -5,15 +5,17 @@ import arrayCategories from './data';
 const Categories = () => {
 
   return (
-    <section>
-      <h3 className="style-font">Categorias Destacadas</h3>
-      <div className="container-categories">
+    <section className="categories">
+      <div className="categories__leyend">
+        <h3 className="categories__leyend__title style-font">Categorias Destacadas</h3>
+      </div>
+      <div className=" categories__blocks">
         {arrayCategories.map((item, index) => {
           return (
             <div key={index}
-              className={`container-categories-item`}>
+              className="categories__blocks__category">
               <p><i class={item.icon}></i></p>
-              <h3>{item.title}</h3>
+              <h3 className="categories__blocks__category__title" >{item.title}</h3>
             </div>
           )
         })}
