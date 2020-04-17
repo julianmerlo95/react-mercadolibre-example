@@ -14,13 +14,12 @@ const Categories = () => {
           return (
             <div key={index}
               className="categories__blocks__category">
-              <p><i class={item.icon}></i></p>
-              <h3 className="categories__blocks__category__title" >{item.title}</h3>
+              <p className="categories__blocks__category__icon"><i class={item.icon}></i></p>
+              <h3 className="categories__blocks__category__title style-font" >{item.title}</h3>
             </div>
           )
         })}
       </div>
-
     </section>
   )
 }

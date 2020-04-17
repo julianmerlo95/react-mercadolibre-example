@@ -26,6 +26,8 @@
 .payments__desktop__title,
 .payments__movil___title{
   font-size:17px;
+  color:black;
+  font-weight: 100;
 }
 .payments__desktop__description,
 .payments__movil__description{

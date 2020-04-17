@@ -1,46 +1,52 @@
 import React from 'react';
 import './Navbar.css'
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import { arrayListDownCenter, arrayListDownRight, logo, coronavirus } from './data';
 
 const Navbar = () => {
   return (
-    <div className="navbar-container-navbar">
+    <nav className="navbar">
 
-      <div className="navbar-high">
-        <i class="fas fa-align-cart icon-hidden-one"></i>
-        <img src={logo} className="navbar-img-logo"></img>
-        <input className="navbar-input-search"></input>
-        <img src={coronavirus} className="navbar-img-coronavirus"></img>
-        <div className="navbar-burguer">{/*START HIDDEN*/}
-          <i class="fas fa-shopping-cart icon-hidden-two"></i>
-        </div>{/*END HIDDEN*/}
+      <div className="navbar__high">
+        <div className="navbar__high__input--meli">
+          <img src={logo} className="navbar__high__img--logo"></img>
+        </div>
+        <div className="navbar__high__block">
+          <input className="navbar__high__input" placeholder="Buscar productos, marcas y más..."></input>
+          <div className="navbar__high__block__icon">
+            <i class="navbar__high__icon fas fa-search"></i>
+          </div>
+        </div>
+        <div className="navbar__high__input--coronavirus">
+          <img src={coronavirus} className=" navbar__high__img--coronavirus"></img>
+        </div>
       </div>
-
-      <div className="navbar-down">
-        <h5 className="navbar-send">Enviar a ...</h5>
-        <div className="navbar-send hidden"> {/*START HIDDEN*/}
+      <div className="navbar__down">
+        <div className="navbar__down__send">
           <div>
-            <h4><i class="fas fa-map-marker-alt"></i></h4>
-            <h5 className="">Enviar a Juan Perez Rosello 245</h5>
+            <i class="navbar__down__send__icon fas fa-map-marker-alt"></i>
           </div>
-          <div>
-            <h4><i class="fas fa-angle-right"></i></h4>
+          <div className="navbar__down__block">
+            <h5 className="navbar__down__block__description">Enviar a Juan Perez</h5>
+            <h5 className="navbar__down__block__title">Enviar a Rosello</h5>
           </div>
-        </div> {/*END HIDDEN*/}
-        <ul className="navbar-list-center">
+        </div>
+        <ul className="navbar__down__list--center">
           {arrayListDownCenter.map((item, index) =>
-            <li key={index} className="navbar-item-array-center">
-              <Link to={item.name}>{item.name}</Link></li>)}
+            <li key={index} className="navbar__down__list--center__item">
+              <NavLink to=""> {item.name} <i class={`navbar__down__list--center__icon ${item.icon}`}>
+              </i></NavLink></li>)}
         </ul>
-        <ul className="navbar-list-right">
+        <ul className="navbar__down__list--right">
           {arrayListDownRight.map((item, index) =>
-            <li key={index} className="navbar-item-array-right">
-              <Link to={item.name}>{item.name}</Link></li>)}
+            <li key={index} className="navbar__down__list--right__item">
+              <i class={`navbar__down__list--center__icon--user ${item.iconUser}`}></i>
+              <NavLink to={item.name}> {item.name} <i class={`navbar__down__list--center__icon ${item.icon}`}>
+              </i></NavLink></li>)}
         </ul>
       </div>
 
-    </div>
+    </nav>
   )
 }
 

@@ -1,109 +1,136 @@
-.navbar-container-navbar{
+.navbar{
   background-color:#fff159 ;
-  height: 100px;
-  padding-top: 10px;
+  height: 89px;
+  padding-top: 12px;
 }
-.navbar-high, .navbar-down{
-  display: flex;  
-  justify-content: space-between;
-  height: auto;
-  max-width: 1200px;
-  margin:0 auto;
+.navbar__high{
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
 }
-.navbar-input-search{
+.navbar__high__input--meli{
+  width: 25%;
+}
+.navbar__high__block{
+  width: 50%;
+}
+.navbar__high__input--coronavirus{
+  width: 30%;
+}
+.navbar__high__img--logo{
+  width: 134px;
+  height: 34px;
+}
+.navbar__high__block{
+  width: 80%;
+}
+.navbar__high__input{
+  width: 570px;
+  height: 35px;
+}
+.navbar__high__block{
+  width: 60%;
+  margin-right: 65px;
+  height: 39px;
+  text-align: center;
+  display: flex;
+}
+.navbar__high__input{
   font-size: 16px;
   line-height: 21px;
-  width: 598px;
+  border:1px solid white;
+  box-shadow: 0px 1px 2px gray;
+}
+.navbar__high__input::placeholder{
+  padding: 10px;
+  background-color: white;
+  color: rgb(202, 197, 197);
+  font-size: 16px;
+}
+.navbar__high__block__icon{
+  height: 36.5px;
+  width: 30px;
+  background-color: white;
+  border-left: 1px solid black;
+  border:1px solid white;
+  box-shadow: 0px 1px 2px gray;
+}
+.navbar__high__icon{
+  width: 2%;
+  color:rgb(167, 167, 167);
+  height: 100%;
+  margin-top: 13px;
+  margin-right: 14px;
 }
 
-.navbar-img-logo{
-  height: 34px;
-  top: 11px;
-  width: 134px;
-}
-.navbar-img-coronavirus{
-  max-width: 340px;
-  max-height: 39px;
-}
-.navbar-send{
-  width: 10%;
-}
-.hidden{
-  display: none;
-}
-.navbar-list-center{
-  list-style: none;
+/* DOWN */
+.navbar__down{
   display: flex;
-  width: 60%;
-  justify-content: space-around;
+  width: 1200px;
+  margin: 0 auto;
 }
-.navbar-list-right{
-  list-style: none;
+.navbar__down__send{
+  width: 12%;
   display: flex;
-  width: 30%;
+}
+.navbar__down__list--center{
+  width: 50%;
+  display: flex;
   justify-content: space-around;
+  list-style: none;
+  text-align: right;
+  margin-right: 40px;
 }
-.navbar-burguer{
-  display: none;
+.navbar__down__list--right{
+  width: 38%;
+  display: flex;
+  list-style: none;
+  padding: 0%;
 }
-.navbar-item-array-center, .navbar-item-array-right{
-  line-height: 22px;
+.navbar__high__img--coronavirus{
+  width: 340px;
+  height: 39px;
+}
+.navbar__down__list--right__item{
+  margin-left:30px;
+}
+.navbar__down__list--center a{
+  color:rgba(51,51,51,.6);
+  list-style: none;
+  text-decoration: none;
   font-size: 14px;
-  color: rgba(51,51,51,.6);
 }
-
-@media (max-width: 425px) {
-.navbar-container-navbar{
-  width: 100%;
-  height: 90px;
-}
-.navbar-img-coronavirus{
-  display: none;
- }
- .navbar-list-center, .navbar-list-right{
-  display: none;
- }
- .navbar-send{
-  display: none;
-}
- .hidden{
-   width: 100%;
-   display: flex;
-   justify-content: space-between;
-   color:rgb(115, 108, 40);
- }
- .hidden div{
-   display: flex;
- }
- .hidden div h4{
-   margin-right:8px;
-   margin-left: 8px;
- }
- .navbar-burguer{
-  display: inline;
-  width: 10%;
+.navbar__down__list--right a{
+  color:rgba(39, 38, 38, 0.6);
   list-style: none;
-  color:rgb(115, 108, 40);
- }
- .navbar-img-logo{
-  display: none;
- }
- .icon-hidden-one{
-  margin-top: 10px;
-  margin-left: 10px;
-  width: 8%;
-  font-size: 20px;
-  color:rgb(115, 108, 40);
- }
- .navbar-input-search{
-   width: 80%;
-   height: 30px;
- }
-.icon-hidden-two   {
-    margin-top: 10px;
-    font-size: 20px;
-    margin-left: 7px;
-    width: 10%;
-    color:rgb(115, 108, 40);
+  text-decoration: none;
+  font-size: 15px;
+}
+.navbar__down__list--center__icon--user{
+  color:rgba(39, 38, 38, 0.6);
+}
+.navbar__down__block{
+  width: 100%;
+}
+.navbar__down__send__icon{
+  margin-top: 14px;
+  margin-right: 5px;
+  color:rgba(39, 38, 38, 0.6);
+}
+.navbar__down__block__description{
+  position: absolute;
+  margin-top:10px;
+  font-size: 12px;
+  color:rgba(29, 28, 28, 0.6);
+  font-family: 'Raleway', sans-serif;
+}
+.navbar__down__block__title{
+  color:rgba(39, 39, 39, 0.6);
+  font-size: 13px;
+  font-family: 'Raleway', sans-serif;
+}
+@media (max-width: 425px) {
+  .navbar{
+    display: none;
   }
 }

@@ -11,7 +11,6 @@
   background-color: white;
   color:#3483fa;
 }
-
 .categories__blocks__category{
   width: 169px;
   text-align: center;
@@ -22,10 +21,15 @@
 }
 .icon-categories {
   width: 100%;
-  margin-left: 18px;
+  margin-left: 30px;
 }
 .categories__blocks__category__title{
+  width: 100%;
+  margin:0%;
   font-size: 15px;
+  text-align: center;
+  color:black;
+  padding: 10px;
 }
 @media (max-width: 425px) {
   .categories{
