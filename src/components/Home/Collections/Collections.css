@@ -27,7 +27,7 @@
   margin-left: 5%;
 }
 .collections__block__right{
-  width: 70%;
+  width: 100%;
   flex-wrap: wrap;
 }
 .collections__block__right__img{
@@ -57,12 +57,18 @@
   }
   .collections__block__right{
     width: 100%;
+    padding: 5%;
     margin: 0 auto;
     flex-wrap: wrap;
   }
   .collections__block__right__img{
-    width: 179Xpx;
+    width: 40%;
     flex-wrap: wrap;
+  }
+}
+@media (max-width: 416px) {
+  .collections__block__right__img{
+    width: ;
   }
 }
 
@@ -79,7 +85,7 @@
     flex-wrap: wrap;
   }
   .collections__block__right__img{
-    width: 150px;
+    width: 38%;
     flex-wrap: wrap;
   }
 }
