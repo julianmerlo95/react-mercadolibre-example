@@ -4,25 +4,28 @@ import { arrayDiscovery } from './data';
 
 const Discovery = (props) => {
   return (
-    <React.Fragment>
-      <h3 className="discovery-leyend style-font">{props.leyend}</h3>
-      <secction className="container-discovery ">
+    <secction className="discovery">
+      <div className="discovery__leyend">
+        <h3 className="discovery__leyend__title style-font">{props.leyend}</h3>
+      </div>
+      <div className="discovery__blocks">
         {arrayDiscovery.map((item, index) => {
           return (
             <div key={index} className={item.textClass}>
-              <div>
-                <h3>{item.title}</h3>
-                <h4>{item.description}</h4>
-                <button>{item.textButton}</button>
+              <div className="discovery__blocks__content__colum">
+                <h3 className="discovery__blocks__content__title">{item.title}</h3>
+                <h4 className="discovery__blocks__content__description">{item.description}</h4>
+                <button className="discovery__blocks__content__button">{item.textButton}</button>
               </div>
-              <div>
-                <img src={item.image}></img>
+              <div className="discovery__blocks__content__colum">
+                <img className="discovery__blocks__content__img" src={item.image}></img>
               </div>
             </div>
           )
         })}
-      </secction>
-    </React.Fragment>
+      </div>
+    </secction>
+
   )
 }
 

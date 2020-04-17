@@ -4,26 +4,26 @@ import './Payments.css';
 
 const PaymentsMethod = () => {
   return (
-    <div className="container-payments style-font standar-width ">
-      <div className="payments-method-hidden">
-        <img src={arrayPayments[0].img}></img>
+    <section className="payments tyle-font standar-width">
+      <div className="payments__movil">
+        <img className="payments__movil__img" src={arrayPayments[0].img}></img>
         <div>
-          <h2 className="title-payments">{arrayPayments[0].name}</h2>
-          <p className="description-payments">{arrayPayments[0].description}</p>
+          <h2 className="payments__movil__title">{arrayPayments[0].name}</h2>
+          <p className=" payments__movil__description">{arrayPayments[0].description}</p>
         </div>
       </div>
       {arrayPayments.map((item, index) => {
         return (
-          <div key={index} className="payments-method">
+          <div key={index} className="payments__desktop">
             <img src={item.img}></img>
             <div>
-              <h2 className="title-payments">{item.name}</h2>
-              <p className="description-payments">{item.description}</p>
+              <h2 className="payments__desktop__title">{item.name}</h2>
+              <p className="payments__desktop__description">{item.description}</p>
             </div>
           </div>
         )
       })}
-    </div>
+    </section>
   )
 }
 

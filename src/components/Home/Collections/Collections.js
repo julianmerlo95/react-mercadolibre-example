@@ -4,20 +4,21 @@ import './Collections.css'
 
 const Collections = () => {
   return (
-    <section className="container-primary">
+    <section className="collections">
       <div>
         <h3 className="style-font">Colecciones: De fiesta</h3>
       </div>
-      <div className="container-collection">
-        <div className="container-left shadow">
-          <img src={deFiesta}></img>
+      <div className="collections__block">
+        <div className=" collections__block__left">
+          <img className="collections__block__left__img" src={deFiesta}></img>
           <div>
-            <h5>Descubri</h5>
-            <h4>De fiesta</h4>
+            <h5 className="collections__block__left__title">Descubri</h5>
+            <h4 className="collections__block__left__description">De fiesta</h4>
           </div>
         </div>
-        <div className="container-right">
-          {arrayImg.map((img, index) => <img key={index} src={img}></img>)}
+        <div className="collections__block__right">
+          {arrayImg.map((img, index) => <img className="collections__block__right__img"
+            key={index} src={img}></img>)}
         </div>
       </div>
     </section>

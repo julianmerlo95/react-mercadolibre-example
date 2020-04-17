@@ -6,14 +6,14 @@ import discovery4 from '../../../assets/img/discovery4.webp';
 
 const arrayDiscovery = [
   {
-    textClass: "discovery-left",
+    textClass: "discovery__blocks__content",
     title: "!Nuevo filtro!",
     description: "Envio con normalidad",
     textButton: "Ver mas",
     image: discovery1
   },
   {
-    textClass: "discovery-right",
+    textClass: "discovery__blocks__content",
     title: "codo a codo",
     description: "!sumate donando!",
     textButton: "Ver mas",
