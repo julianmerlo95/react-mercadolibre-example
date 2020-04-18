@@ -1,11 +1,12 @@
 import React, { PureComponent } from 'react';
 import Axios from '../../../axios/axios';
+import PropTypes from 'prop-types';
 import settings from './data';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Product from './Product/Product';
 import './RecommendationsProducts.css';
+import Product from './Product/Product';
 
 
 class SliderPrimary extends PureComponent {
@@ -47,7 +48,7 @@ class SliderPrimary extends PureComponent {
               return (
                 <Product
                   thumbnail={product.thumbnail}
-                  price={product.price}
+                  price={new Intl.NumberFormat("de-AR").format(product.price)}
                   title={product.title}
                   showsHeightHandler={() => this.showsHeightHandler(index)}
                   hiddenHeightHandler={this.hiddenHeightHandler}
@@ -68,6 +69,14 @@ class SliderPrimary extends PureComponent {
       </>
     )
   }
+}
+
+
+Product.propTypes = {
+  title: PropTypes.string,
+  thumbnail: PropTypes.string,
+  price: PropTypes.number,
+  shipping: PropTypes.Boolean,
 }
 
 export default SliderPrimary;

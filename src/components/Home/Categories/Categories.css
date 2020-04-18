@@ -84,8 +84,11 @@
     display: flex;
     flex-wrap: wrap;
   }
+  .categories__blocks__category__icon{
+    margin-left: 20px;
+  }
   .categories__blocks__category__icon--changeBackground{
-    margin-left: 1px;
+    margin-left: 20px;
   }
   
   .icon-categories {
