@@ -2,7 +2,7 @@ import RecommendationsProducts from '../components/Home/RecommendationsProducts/
 import Discovery from '../components/Home/Discovery/Discovery';
 import Collections from '../components/Home/Collections/Collections';
 import Categories from '../components/Home/Categories/Categories';
-import Navbar from '../components/Navbar/Navbar';
+import Navbar from '../components/Home/Navbar/Navbar';
 import SliderPrimary from '../components/Home/SliderPrimary/SliderPrimary';
 import Payments from '../components/Home/Payments/Payments';
 import Footer from '../components/Home/Footer/Footer';
