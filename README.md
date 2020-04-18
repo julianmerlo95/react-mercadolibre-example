@@ -33,7 +33,10 @@ Conceptos que se implementaron en el proyecto
 - eventos
 - axios
 - routas
+<<<<<<< HEAD
 - propsType
+=======
+>>>>>>> 527f9b62c87a6fd62b8c608d41e88137ab38cbf7
 - context (proximamente)
 - metodologia en estilos css: bem
 - ciclos de renderizado: componentDidMount
@@ -45,3 +48,7 @@ Conceptos que se implementaron en el proyecto
 ```
 npm install o npm i
 ```
+
+
+# Proximo sprint:
+## - Implementar context y sass
