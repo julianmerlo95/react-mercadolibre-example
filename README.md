@@ -22,6 +22,7 @@ Estructura de la pagina
     -                  RecommendationsProducts
     -                  SliderPrimary
     -    containers
+    -              Layout
     -    contex
     -    hoc
 
