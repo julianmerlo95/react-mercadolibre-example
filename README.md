@@ -33,7 +33,7 @@ Conceptos que se implementaron en el proyecto
 - eventos
 - axios
 - routas
-- context
+- context (proximamente)
 - metodologia en estilos css: bem
 - ciclos de renderizado: componentDidMount
 - componentes: stateful component, componentes stateless, pure component, componentes de orden superior (hoc).
