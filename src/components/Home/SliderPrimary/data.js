@@ -12,7 +12,6 @@ const settings = {
   slidesToShow: 1,
   slidesToScroll: 1,
   arrows: false,
-
 };
 
 const arrayImg = [imgCarrouselPrimary1, imgCarrouselPrimary2,
