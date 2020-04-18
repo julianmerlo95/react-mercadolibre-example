@@ -6,6 +6,7 @@
   .carrousel{
     width: 100%;
     margin: 0 auto;
+    object-fit: cover;
   }
   .carrousel__img{
     width: 100%;

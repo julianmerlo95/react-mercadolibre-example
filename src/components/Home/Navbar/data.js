@@ -1,5 +1,5 @@
-import coronavirus from '../../assets/img/logosPrimary/coronavirus.png';
-import logo from '../../assets/img/logosPrimary/logo.png';
+import coronavirus from '../../../assets/img/logosPrimary/coronavirus.png';
+import logo from '../../../assets/img/logosPrimary/logo.png';
 
 const arrayListDownCenter = [
   { name: 'categorias', icon: "fas fa-angle-down" },
@@ -12,7 +12,7 @@ const arrayListDownCenter = [
 ]
 
 const arrayListDownRight = [
-  { name: 'user', iconUser: "fas fa-user-circle" },
+  { name: 'user', iconUser: "fas fa-user-circle", icon: "fas fa-angle-down" },
   { name: 'Mis compras' },
   { name: 'Favoritos', icon: "fas fa-angle-down" },
   { name: '', icon: "fas fa-bell" },

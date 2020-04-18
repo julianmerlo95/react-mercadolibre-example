@@ -12,7 +12,7 @@ class MercadoLibre extends Component {
   render() {
 
     return (
-      <main className="mercadolibre">
+      <>
         <BrowserRouter>
           <Navbar />
         </BrowserRouter>
@@ -27,12 +27,12 @@ class MercadoLibre extends Component {
           leyendAdici="Ver historial" />
 
         <RecommendationsProducts
-          products="pen drive"
+          products="bases notebok"
           leyend="Relacionado con tus visitas en computacion"
           leyendAdici="Computación Ver historial" />
 
         <RecommendationsProducts
-          products="samsung"
+          products="televisores"
           leyend="Ofertas"
           leyendAdici="Ver todas" />
         <Discovery
@@ -40,12 +40,12 @@ class MercadoLibre extends Component {
 
         <RecommendationsProducts
           products="iphone"
-          leyend="Relacionado con tus visitas en Autos, Motos y Otros"
+          leyend="Los mejores productos te esperan"
           leyendAdici="Ver historial" />
 
         <RecommendationsProducts
-          products="iphone"
-          leyend="Inspirado en tus favoritos"
+          products="fox"
+          leyend="Relacionado con tus visitas en Autos, Motos y Otros"
           leyendAdici="Ver favoritos" />
 
         <Discovery
@@ -57,11 +57,11 @@ class MercadoLibre extends Component {
 
         <RecommendationsProducts
           products="iphone"
-          leyend="Inspirado en tus favoritos"
-          leyendAdici="Ver favoritos" />
+          leyend="Tu historial"
+          leyendAdici="Ver historial completo" />
 
         <Footer />
-      </main>
+      </>
     )
   }
 }

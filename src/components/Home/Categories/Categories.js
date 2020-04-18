@@ -1,8 +1,18 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Categories.css'
 import arrayCategories from './data';
 
 const Categories = () => {
+
+  const [changeBackground, setChangeBackground] = useState(false)
+
+  const changeBackgrundHandler = (index) => {
+    setChangeBackground(index)
+  }
+
+  const changeLeaveHandler = () => {
+    setChangeBackground(false)
+  }
 
   return (
     <section className="categories">
@@ -12,10 +22,13 @@ const Categories = () => {
       <div className=" categories__blocks">
         {arrayCategories.map((item, index) => {
           return (
-            <div key={index}
-              className="categories__blocks__category">
-              <p className="categories__blocks__category__icon"><i className={item.icon}></i></p>
-              <h3 className="categories__blocks__category__title style-font" >{item.title}</h3>
+            <div key={index} onMouseMove={() => changeBackgrundHandler(index)}
+              onMouseLeave={changeLeaveHandler}
+              className={`categories__blocks__category${changeBackground === index ? '--changeBackground' : ""}`}>
+              <p className={`categories__blocks__category__icon${changeBackground === index ? '--changeBackground' : ""}`}>
+                <i className={item.icon}></i></p>
+              <h3 className={`style-font categories__blocks__category__title${changeBackground === index ? '--changeBackground' : ""}`}
+              >{item.title}</h3>
             </div>
           )
         })}

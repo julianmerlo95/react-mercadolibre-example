@@ -15,7 +15,7 @@ const Product = (props) => {
             <span className="product_block__icon--love"><i className="far fa-heart"></i></span>
             : null}
           <img className="product_block__img" src={props.thumbnail} alt="alt product"></img>
-          <h3 className="product_block__price ">${props.price}</h3>
+          <h3 className="product_block__price ">${props.price.toLocaleString().split(',', 10)}</h3>
           <p className={`style-font 
           product_block__description--hidden${props.showHover === props.index ? '-show' : ""}`}>
             {props.title}

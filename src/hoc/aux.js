@@ -1,6 +1,6 @@
 import React from 'react';
 
-const aux = (props) => {
+const Aux = (props) => {
   return (
     <>
       {props.children}
@@ -8,4 +8,4 @@ const aux = (props) => {
   )
 };
 
-export default aux;
+export default Aux;

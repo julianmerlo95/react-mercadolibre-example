@@ -14,10 +14,32 @@
 .categories__blocks__category{
   width: 169px;
   text-align: center;
-  margin:0 auto;
-  border:1px solid rgb(226, 226, 226);
+  margin: 0 auto;
+  border: 1px solid rgb(226, 226, 226);
   display: flex;
   flex-wrap: wrap;
+}
+.categories__blocks__category--changeBackground{
+  width: 169px;
+  height: 152px;
+  color:white;
+  text-align: center;
+  background-color: #3483fa;
+  border:1px solid rgb(226, 226, 226);
+  cursor: pointer;
+  display: flex;
+  flex-wrap: wrap;
+}
+.categories__blocks__category__title--changeBackground{
+  width: 100%;
+  margin:0%;
+  font-size: 15px;
+  text-align: center;
+  color:white;
+  padding: 10px;
+}
+.categories__blocks__category__icon{
+  margin-left: 3px;
 }
 .icon-categories {
   width: 100%;
@@ -52,6 +74,20 @@
     display: flex;
     flex-wrap: wrap;
   }
+  .categories__blocks__category--changeBackground{
+    width: 49%;
+    height: 170px;
+    margin:0% auto;
+    text-align: center;
+    background-color: #3483fa;
+    border:1px solid rgb(226, 226, 226);
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .categories__blocks__category__icon--changeBackground{
+    margin-left: 1px;
+  }
+  
   .icon-categories {
     width: 100%;
     margin-left: 35px;

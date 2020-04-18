@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 import Axios from '../../../axios/axios';
 import settings from './data';
 import Slider from "react-slick";
@@ -8,7 +8,7 @@ import Product from './Product/Product';
 import './RecommendationsProducts.css';
 
 
-class SliderPrimary extends Component {
+class SliderPrimary extends PureComponent {
 
   state = {
     products: [],
