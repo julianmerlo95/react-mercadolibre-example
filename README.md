@@ -6,9 +6,9 @@
 Estructura de la pagina 
 
   -src/
-    ----assets
-    ----axios
-    ----components
+    ____assets
+    ____axios
+    ____components
     --------------home  
     ----------------Categories
     ----------------Collections
