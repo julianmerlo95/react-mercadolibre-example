@@ -88,3 +88,11 @@
     height: 250px;
   }
 }
+@media (max-width: 320px) {
+  .discovery__leyend{
+    margin-top: 80px;
+  }
+  .discovery__blocks{
+    width: 98%;
+  }
+}

@@ -38,7 +38,7 @@ class SliderPrimary extends Component {
       products = (
         <div className="products">
           <>
-            <div className=" product__leyend container-leyend style-font">
+            <div className=" product__leyend style-font">
               <h4 className="product__leyend__title style-font">{this.props.leyend}</h4>
               <h4 className="product__leyend__description">{this.props.leyendAdici}</h4>
             </div>

@@ -123,10 +123,10 @@
    .product_block__icon{
     margin-left: 140px;
   }
-}
-@media (max-width: 375px) {
-  .product_block__icon{
-    margin-left: 120px;
+  .product_block__icon--truck{
+    position: absolute;
+    margin-left: 145px;
+    margin-top: 206px;
   }
 }
 @media (max-width: 320px) {
@@ -141,5 +141,14 @@
   }
   .product_block__icon{
     margin-left: 180px;
+  }
+  .product_block__icon--truck{
+    position: absolute;
+    margin-left: 185px;
+    margin-top: 206px;
+  }
+  .product_block__icon--love{
+    position: absolute;
+    margin-left: 200px;
   }
 }
