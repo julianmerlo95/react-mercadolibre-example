@@ -21,6 +21,8 @@ Estructura de la pagina
     -    contex
     -    hoc
 
+Conceptos que se implementaron en el proyecto
+
 - props
 - state
 - eventos
