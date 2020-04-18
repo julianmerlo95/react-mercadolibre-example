@@ -5,7 +5,7 @@
 
 Estructura de la pagina 
 
-  -src/
+   __src/
     ____assets
     ____axios
     ____components
