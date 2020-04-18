@@ -45,7 +45,7 @@
 }
  .product_block__img{
   width: 97%;
-  object-fit: center;
+  object-fit: contain;
   display: block;
   margin:0 auto;
   height: 224px;
