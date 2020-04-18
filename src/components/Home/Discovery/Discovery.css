@@ -6,7 +6,6 @@
   width: 62.3%;
   margin:0 auto;
   text-align: left;
-  margin-bottom: 1%;
   margin-top: 5%;
   color:rgb(102, 102, 102);
   font-size:22px;
@@ -64,7 +63,7 @@
     width: 90%;
     margin-top: 18%;
     margin-left: 3%;
-    margin-bottom: 5%;
+    margin:0%;
   }
   .discovery__blocks__content {
     width: 95%;

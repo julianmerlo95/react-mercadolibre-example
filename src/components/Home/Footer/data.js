@@ -1,6 +1,6 @@
-import payment from '../../../assets/img/payment.svg';
-import protecte from '../../../assets/img/protected.svg';
-import shipping from '../../../assets/img/shipping.svg';
+import payment from '../../../assets/img/footer/payment.svg';
+import protecte from '../../../assets/img/footer/protected.svg';
+import shipping from '../../../assets/img/footer/shipping.svg';
 
 const arrayFooter = [
   {

@@ -18,7 +18,7 @@ const Discovery = (props) => {
                 <button className="discovery__blocks__content__button">{item.textButton}</button>
               </div>
               <div className="discovery__blocks__content__colum">
-                <img className="discovery__blocks__content__img" src={item.image}></img>
+                <img className="discovery__blocks__content__img" src={item.image} alt="alt discovery"></img>
               </div>
             </div>
           )

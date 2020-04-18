@@ -1,5 +1,6 @@
-import coronavirus from '../../assets/img/coronavirus.png';
-import logo from '../../assets/img/logo.png';
+import coronavirus from '../../assets/img/logosPrimary/coronavirus.png';
+import logo from '../../assets/img/logosPrimary/logo.png';
+
 const arrayListDownCenter = [
   { name: 'categorias', icon: "fas fa-angle-down" },
   { name: 'ofertas' },

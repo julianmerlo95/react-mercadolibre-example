@@ -1,7 +1,7 @@
-import creditCard from '../../../assets/img/credit-card.svg';
-import debitCard from '../../../assets/img/debit-card.svg';
-import efect from '../../../assets/img/efect.svg';
-import viewMore from '../../../assets/img/view-more.svg';
+import creditCard from '../../../assets/img/payments/credit-card.svg';
+import debitCard from '../../../assets/img/payments/debit-card.svg';
+import efect from '../../../assets/img/payments/efect.svg';
+import viewMore from '../../../assets/img/payments/view-more.svg';
 
 const arrayPayments = [
   {

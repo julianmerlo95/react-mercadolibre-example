@@ -14,7 +14,7 @@ const Categories = () => {
           return (
             <div key={index}
               className="categories__blocks__category">
-              <p className="categories__blocks__category__icon"><i class={item.icon}></i></p>
+              <p className="categories__blocks__category__icon"><i className={item.icon}></i></p>
               <h3 className="categories__blocks__category__title style-font" >{item.title}</h3>
             </div>
           )

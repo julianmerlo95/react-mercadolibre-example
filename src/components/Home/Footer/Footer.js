@@ -9,7 +9,7 @@ const Footer = () => {
         {arrayFooter.map((item, index) => {
           return (
             <div className=" footer__block__above__shipping" key={index}>
-              <img src={item.img}></img>
+              <img src={item.img} alt="img footer"></img>
               <h4 className="footer__block__above__shipping__title  style-font" >{item.title}</h4>
               <p className="footer__block__above__shipping__description--primary  style-font">{item.descriptionPrimary}</p>
               <p className="footer__block__above__shipping__description--secondary">{item.descriptionSecondary}</p>
@@ -25,7 +25,7 @@ const Footer = () => {
         </ul>
         <div>
           <h3 className="footer__block__down__button style-font">
-            <i class="fas fa-mobile-alt"></i>
+            <i className="fas fa-mobile-alt"></i>
           ¡Descargá gratis la app de Mercado Libre!
           </h3>
         </div>

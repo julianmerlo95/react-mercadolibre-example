@@ -1,15 +1,12 @@
 import React from 'react';
-import MarcadoLibre from './containers/MercadoLibre';
-import Aux from './hoc/aux';
+import Mercadolibre from './containers/MercadoLibre'
 
-function App() {
+const App = () => {
   return (
-    <Aux>
-      <main style={{ backgroundColor: '#ebebeb', width: '100%' }}>
-        <MarcadoLibre />
-      </main>
-    </Aux>
-  );
+    <main style={{ backgroundColor: '#ebebeb' }}>
+      <Mercadolibre />
+    </main>
+  )
 }
 
 export default App;

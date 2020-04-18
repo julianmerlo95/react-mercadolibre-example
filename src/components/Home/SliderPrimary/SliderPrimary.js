@@ -12,9 +12,10 @@ class SliderPrimary extends Component {
     return (
       <section className="carrousel">
         <Slider {...settings} >
-          {arrayImg.map((item, index) => <div key={index}>
-            <img className="carrousel__img" src={item}></img>
-          </div>)}
+          {arrayImg.map((item, index) =>
+            <div key={index}>
+              <img className="carrousel__img" src={item} alt="alt sliderPrimary"></img>
+            </div>)}
         </Slider>
       </section>
     );

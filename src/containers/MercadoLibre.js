@@ -1,41 +1,67 @@
 import React, { Component } from 'react';
 import { BrowserRouter } from 'react-router-dom';
-
-import Navbar from '../components/Navbar/Navbar';
-import SliderPrimary from '../components/Home/SliderPrimary/SliderPrimary';
-import Payments from '../components/Home/Payments/Payments';
-import ShowDesktop from './renderComponent/ShowDesktop';
-import ShowMovil from './renderComponent/ShowMovil';
-import Footer from '../components/Home/Footer/Footer';
-import Context from '../context/Context';
-
 import './MercadoLibre.css';
+import {
+  RecommendationsProducts, Discovery,
+  Collections, Categories, Navbar,
+  SliderPrimary, Payments, Footer
+} from './data';
 
 class MercadoLibre extends Component {
 
   render() {
 
-
-    let showComponents = null;
-
-    if (window.screen.width > 1200) {
-      showComponents = (<><ShowDesktop /></>)
-    } else if (window.screen.width < 426) {
-      showComponents = (<><ShowMovil /></>)
-    }
-
     return (
-      <>
-        <Context.Provider value={{ validateScreen: window.screen.width }}>
-          <BrowserRouter>
-            <Navbar />
-          </BrowserRouter>
-          <SliderPrimary />
-          <Payments />
-          {showComponents}
-          <Footer />
-        </Context.Provider>
-      </>
+      <main className="mercadolibre">
+        <BrowserRouter>
+          <Navbar />
+        </BrowserRouter>
+
+        <SliderPrimary />
+
+        <Payments />
+
+        <RecommendationsProducts
+          products="macbook pro"
+          leyend="Basado en tu última visita"
+          leyendAdici="Ver historial" />
+
+        <RecommendationsProducts
+          products="pen drive"
+          leyend="Relacionado con tus visitas en computacion"
+          leyendAdici="Computación Ver historial" />
+
+        <RecommendationsProducts
+          products="samsung"
+          leyend="Ofertas"
+          leyendAdici="Ver todas" />
+        <Discovery
+          leyend="Descubrí" />
+
+        <RecommendationsProducts
+          products="iphone"
+          leyend="Relacionado con tus visitas en Autos, Motos y Otros"
+          leyendAdici="Ver historial" />
+
+        <RecommendationsProducts
+          products="iphone"
+          leyend="Inspirado en tus favoritos"
+          leyendAdici="Ver favoritos" />
+
+        <Discovery
+          leyend="Te puede interesar" />
+
+        <Collections />
+
+        <Categories />
+
+        <RecommendationsProducts
+          products="iphone"
+          leyend="Inspirado en tus favoritos"
+          leyendAdici="Ver favoritos" />
+
+        <Footer />
+      </main>
     )
   }
 }
