@@ -3,7 +3,10 @@ import { arrayListDownCenter, arrayListDownRight, logo, coronavirus } from './da
 import { NavLink } from 'react-router-dom';
 import './Navbar.css'
 
+
+
 const Navbar = () => {
+
 
   return (
     <nav className="navbar">
@@ -35,7 +38,8 @@ const Navbar = () => {
             <img src={logo} className="navbar__high__img--logo" alt="alt narvar"></img>
           </div>
           <div className="navbar__high__block">
-            <input className="navbar__high__input" placeholder="Buscar productos, marcas y más..."></input>
+            <input className="navbar__high__input"
+              placeholder="Buscar productos, marcas y más..."></input>
             <div className="navbar__high__block__icon">
               <i className="navbar__high__icon fas fa-search"></i>
             </div>

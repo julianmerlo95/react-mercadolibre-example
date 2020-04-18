@@ -1,10 +1,8 @@
 import React, { Component } from 'react';
-import { BrowserRouter } from 'react-router-dom';
 import './MercadoLibre.css';
 import {
-  RecommendationsProducts, Discovery,
-  Collections, Categories, Navbar,
-  SliderPrimary, Payments, Footer
+  Layout, RecommendationsProducts, Discovery,
+  Collections, Categories
 } from './data';
 
 class MercadoLibre extends Component {
@@ -13,54 +11,46 @@ class MercadoLibre extends Component {
 
     return (
       <>
-        <BrowserRouter>
-          <Navbar />
-        </BrowserRouter>
+        <Layout>
+          <RecommendationsProducts
+            products="macbook pro"
+            leyend="Basado en tu última visita"
+            leyendAdici="Ver historial" />
 
-        <SliderPrimary />
+          <RecommendationsProducts
+            products="bases notebok"
+            leyend="Relacionado con tus visitas en computacion"
+            leyendAdici="Computación Ver historial" />
 
-        <Payments />
+          <RecommendationsProducts
+            products="televisores"
+            leyend="Ofertas"
+            leyendAdici="Ver todas" />
+          <Discovery
+            leyend="Descubrí" />
 
-        <RecommendationsProducts
-          products="macbook pro"
-          leyend="Basado en tu última visita"
-          leyendAdici="Ver historial" />
+          <RecommendationsProducts
+            products="iphone"
+            leyend="Los mejores productos te esperan"
+            leyendAdici="Ver historial" />
 
-        <RecommendationsProducts
-          products="bases notebok"
-          leyend="Relacionado con tus visitas en computacion"
-          leyendAdici="Computación Ver historial" />
+          <RecommendationsProducts
+            products="fox"
+            leyend="Relacionado con tus visitas en Autos, Motos y Otros"
+            leyendAdici="Ver favoritos" />
 
-        <RecommendationsProducts
-          products="televisores"
-          leyend="Ofertas"
-          leyendAdici="Ver todas" />
-        <Discovery
-          leyend="Descubrí" />
+          <Discovery
+            leyend="Te puede interesar" />
 
-        <RecommendationsProducts
-          products="iphone"
-          leyend="Los mejores productos te esperan"
-          leyendAdici="Ver historial" />
+          <Collections />
 
-        <RecommendationsProducts
-          products="fox"
-          leyend="Relacionado con tus visitas en Autos, Motos y Otros"
-          leyendAdici="Ver favoritos" />
+          <Categories />
 
-        <Discovery
-          leyend="Te puede interesar" />
-
-        <Collections />
-
-        <Categories />
-
-        <RecommendationsProducts
-          products="iphone"
-          leyend="Tu historial"
-          leyendAdici="Ver historial completo" />
-
-        <Footer />
+          <RecommendationsProducts
+            products="iphone"
+            leyend="Tu historial"
+            leyendAdici="Ver historial completo" />
+        </Layout>
       </>
     )
   }
