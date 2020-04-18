@@ -18,8 +18,8 @@ Estructura de la pagina
     -                 Payments
     -                 RecommendationsProducts
     -                 SliderPrimary
-    -     containers
-    -     contex
-    -     hoc
+    -    containers
+    -    contex
+    -    hoc
 
       
