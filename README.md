@@ -5,21 +5,21 @@
 
 Estructura de la pagina 
 
-   __src/
-    ____assets
-    ____axios
-    ____components
-    --------------home  
-    ----------------Categories
-    ----------------Collections
-    ----------------Discovery
-    ----------------Footer
-    ----------------Navbar
-    ----------------Payments
-    ----------------RecommendationsProducts
-    ----------------SliderPrimary
-    ----containers
-    ----contet
-    ----hoc
+    - src/
+    -    assets
+    -    axios
+    -    components
+    -              home  
+    -                 Categories
+    -                 Collections
+    -                 Discovery
+    -                 Footer
+    -                 Navbar
+    -                 Payments
+    -                 RecommendationsProducts
+    -                 SliderPrimary
+    -     containers
+    -     contex
+    -     hoc
 
       
