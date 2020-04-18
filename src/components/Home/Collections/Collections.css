@@ -7,7 +7,7 @@
   display: flex;
 }
 .collections__block__left{
-  width: 30%;
+  width: 40%;
   background-color: white;
   border-radius: 5px;
 }
@@ -57,18 +57,13 @@
   }
   .collections__block__right{
     width: 100%;
-    padding: 5%;
     margin: 0 auto;
     flex-wrap: wrap;
   }
   .collections__block__right__img{
     width: 40%;
+    margin-left: 25px;
     flex-wrap: wrap;
-  }
-}
-@media (max-width: 416px) {
-  .collections__block__right__img{
-    width: ;
   }
 }
 

@@ -129,6 +129,14 @@
     margin-top: 206px;
   }
 }
+
+@media (max-width: 400px) {
+  .product_block__icon--truck,
+  .product_block__icon--love{
+  display: none;
+  }
+}
+
 @media (max-width: 320px) {
   .product_block{
     width: 80%;

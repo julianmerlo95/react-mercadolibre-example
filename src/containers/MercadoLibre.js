@@ -7,12 +7,14 @@ import Payments from '../components/Home/Payments/Payments';
 import ShowDesktop from './renderComponent/ShowDesktop';
 import ShowMovil from './renderComponent/ShowMovil';
 import Footer from '../components/Home/Footer/Footer';
+import Context from '../context/Context';
 
 import './MercadoLibre.css';
 
 class MercadoLibre extends Component {
 
   render() {
+
 
     let showComponents = null;
 
@@ -24,13 +26,15 @@ class MercadoLibre extends Component {
 
     return (
       <>
-        <BrowserRouter>
-          <Navbar />
-        </BrowserRouter>
-        <SliderPrimary />
-        <Payments />
-        {showComponents}
-        <Footer />
+        <Context.Provider value={{ validateScreen: window.screen.width }}>
+          <BrowserRouter>
+            <Navbar />
+          </BrowserRouter>
+          <SliderPrimary />
+          <Payments />
+          {showComponents}
+          <Footer />
+        </Context.Provider>
       </>
     )
   }

@@ -20,28 +20,32 @@ const settings = {
       settings: {
         slidesToShow: 2,
         slidesToScroll: 2,
-        initialSlide: 2
+        initialSlide: 2,
+        arrows: false
       }
     },
     {
       breakpoint: 425,
       settings: {
         slidesToShow: 2,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        arrows: false
       }
     },
     {
       breakpoint: 375,
       settings: {
         slidesToShow: 2,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        arrows: false
       }
     },
     {
       breakpoint: 320,
       settings: {
         slidesToShow: 1,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        arrows: false
       }
     }
   ]

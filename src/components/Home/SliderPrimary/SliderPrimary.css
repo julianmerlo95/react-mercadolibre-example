@@ -2,7 +2,7 @@
   width: 85%;
   margin: 0 auto;
 }
-@media (max-width: 600px) {
+@media (max-width: 425px) {
   .carrousel{
     width: 100%;
     margin: 0 auto;
