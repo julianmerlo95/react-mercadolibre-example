@@ -44,3 +44,7 @@ Conceptos que se implementaron en el proyecto
 ```
 npm install o npm i
 ```
+
+
+# Proximo sprint:
+## - Implementar context y sass
