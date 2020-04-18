@@ -30,11 +30,12 @@ Conceptos que se implementaron en el proyecto
 - props
 - state
 - eventos
-- ciclos de renderizado: componentDidMount
-- componentes: stateful component, componentes stateless, pure component, componentes de orden superior (hoc).
 - axios
+- routas
 - context
 - metodologia en estilos css: bem
+- ciclos de renderizado: componentDidMount
+- componentes: stateful component, componentes stateless, pure component, componentes de orden superior (hoc).
 - metodologia en la implementacion de la pagina: movile first
 ```
 
