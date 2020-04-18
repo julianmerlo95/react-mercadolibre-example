@@ -39,7 +39,7 @@ Conceptos que se implementaron en el proyecto
 - metodologia en la implementacion de la pagina: movile first
 ```
 
-#### Si clona el codigo, no se olvide de ejecutar npm install, para instalar /node_modules
+#### Si clona el repositorio, no se olvide de ejecutar npm install, para instalar las dependencias
 ```
 npm install o npm i
 ```
