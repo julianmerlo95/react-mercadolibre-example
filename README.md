@@ -48,5 +48,5 @@ npm install o npm i
 
 
 # Proximo sprint:
-## - Implementar context y sass
+## - Implementar context
 ## - Implementar sass
