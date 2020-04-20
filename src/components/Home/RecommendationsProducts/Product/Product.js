@@ -1,6 +1,5 @@
 import React from 'react';
 import '../../../../globalStyle.sass';
-import './Product.css'
 
 const Product = (props) => {
 
