@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './Categories.css'
+import './Categories.sass'
 import arrayCategories from './data';
 
 const Categories = () => {

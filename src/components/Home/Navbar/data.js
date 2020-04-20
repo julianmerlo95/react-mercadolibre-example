@@ -12,7 +12,7 @@ const arrayListDownCenter = [
 ]
 
 const arrayListDownRight = [
-  { name: 'user', iconUser: "fas fa-user-circle", icon: "fas fa-angle-down" },
+  { name: 'User', iconUser: "fas fa-user-circle", icon: "fas fa-angle-down" },
   { name: 'Mis compras' },
   { name: 'Favoritos', icon: "fas fa-angle-down" },
   { name: '', icon: "fas fa-bell" },

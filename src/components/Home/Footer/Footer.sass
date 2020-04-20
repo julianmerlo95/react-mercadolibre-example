@@ -1,12 +1,12 @@
-@import '../../../globalStyle'
+@import "../../../globalStyle"
 
 .footer
   background-color: white
 
 .footer__block__above
-  width: 1200px
-  display: flex
-  margin: 0 auto
+  width: $box-width-global
+  display: $box-display-global
+  margin: $box-margin-global
   text-align: center
   padding: 50px
 
@@ -14,14 +14,13 @@
     padding: 25px
 
 .footer__block__down
-  display: flex
-  width: 1200px
-  margin: 0 auto
-  width: box-width
+  display: $box-display-global
+  width: $box-width-global
+  margin: $box-margin-global
   text-align: center
 
   &__list
-    display: flex
+    display: $box-display-global
     list-style: none
     width: 70%
 
@@ -32,16 +31,32 @@
     width: 337px
     margin: 0%
     margin-top: 13px
-    background-color: yellow
-    font-size: 15px
+    background-color: $text-color-three
+    font-size: $font-size-secondary
     border-radius: 15px
     padding: 7px
     cursor: pointer
 
 .footer__block__above__shipping__description--primary
   font-size: 17px
-  color: gray
+  color: $text-color-primary
 
 .footer__block__above__shipping__description--secondary
-  font-size: 15px
-  color: rgb(52, 131, 250)
+  font-size: $font-size-secondary
+  color: $text-color-secondary
+
+@media only screen and (max-width: 425px)
+  .footer
+    width: 100%
+    margin-top: 23%
+
+    &__block__above
+      width: 75%
+      margin: $box-margin-global
+      display: inline-block
+
+    &__block__above__shipping
+      width: 85%
+
+    &__block__down
+      display: none

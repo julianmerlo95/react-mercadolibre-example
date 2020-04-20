@@ -1,12 +1,12 @@
 import React from 'react';
 import { deFiesta, arrayImg } from './data';
-import './Collections.css'
+import './Collections.sass'
 
 const Collections = () => {
   return (
     <section className="collections">
       <div>
-        <h3 className="style-font">Colecciones: De fiesta</h3>
+        <h3 className="collections__title style-font">Colecciones: De fiesta</h3>
       </div>
       <div className="collections__block">
         <div className=" collections__block__left">

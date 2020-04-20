@@ -1,40 +1,40 @@
 @import '../../../globalStyle'
 
-  .categories
-    width: 1200px
-    margin: 0 auto
-    margin-top: 3%
+.categories
+  width: $box-width-global
+  margin: $box-margin-global
+  margin-top: 3%
 
 .categories__blocks
-  width: 1200px
-  margin: 0 auto
-  display: flex
+  width: $box-width-global
+  margin: $box-margin-global
+  display: $box-display-global
   flex-wrap: wrap
   background-color: white
-  color: #3483fa
+  color: $text-color-secondary
 
   &__category
     width: 169px
     text-align: center
-    margin: 0 auto
+    margin: $box-margin-global
     border: 1px solid rgb(226, 226, 226)
-    display: flex
+    display: $box-display-global
     flex-wrap: wrap
 
   &__category--changeBackground
     width: 169px
     text-align: center
-    margin: 0 auto
+    margin: $box-margin-global
     border: 1px solid rgb(226, 226, 226)
-    background-color: #3483fa
+    background-color: $text-color-secondary
     cursor: pointer
-    display: flex
+    display: $box-display-global
     flex-wrap: wrap
 
   &__category__title--changeBackground
     width: 100%
     margin: 0%
-    font-size: 15px
+    font-size: $font-size-secondary
     text-align: center
     color: white
     padding: 10px
@@ -53,7 +53,43 @@
 .categories__blocks__category__title
   width: 100%
   margin: 0%
-  font-size: 15px
+  font-size: $font-size-secondary
   text-align: center
   color: black
   padding: 10px
+
+@media (max-width: 425px)
+  .categories
+    width: 100%
+
+    &__blocks
+      width: 100%
+      margin: $box-margin-global
+      display: inline-block
+      background-color: white
+      color: $text-color-secondary
+
+    &__blocks__category
+      width: 99%
+      display: $box-display-global
+
+    &__blocks__category--changeBackground
+      display: $box-display-global
+      width: 99%
+      background-color: $text-color-secondary
+
+    &__blocks__category__icon
+      width: 85%
+      font-size: 10px
+
+    &__blocks__category__icon--changeBackground
+      width: 85%
+      font-size: 10px
+      color: white
+
+@media (max-width: 320px)
+  .categories__blocks
+    display: none
+
+  .categories__leyend__title
+    display: none

@@ -1,25 +1,24 @@
 @import '../../../globalStyle'
 
 .payments
-  display: flex
+  display: $box-display-global
   justify-content: space-around
-  width: 1200px
-  margin: 0 auto
+  width: $box-width-global
+  margin: $box-margin-global
   height: 85px
   border-radius: 5px
   margin-top: 30px
   background-color: white
 
   &__desktop
-    display: flex
+    display: $box-display-global
     width: 100%
 
   &__desktop div
     margin-top: 5%
 
   &__desktop img
-    margin-left: 10px
-    margin-right: 20px
+    margin: 0px 20px 0px 10px
 
   &__desktop h2
     margin: 0%
@@ -28,7 +27,7 @@
   &__desktop__title,
 
   &__movil___title
-    font-size: 17px
+    font-size: $font-size-primary
     color: black
     font-weight: 100
 
@@ -36,9 +35,35 @@
 
   &__movil__description
     display: inline
-    font-size: 16px
-    color: rgb(52, 131, 250)
+    font-size: $font-size-secondary
+    color: $text-color-secondary
     cursor: pointer
 
   &__movil
     display: none
+
+@media (max-width: 425px)
+  .payments
+    width: 95%
+    height: 140px
+    text-align: center
+    box-shadow: $box-shadow
+    transition: 0.5s
+
+    &:hover
+      box-shadow: $box-shadow-hover
+      transition: 0.5s
+
+    &__desktop
+      display: none
+
+    &__movil
+      width: 100%
+      display: $box-display-global
+      justify-content: center
+      font-size: $font-size-secondary
+
+    &__movil__img
+      width: 50px
+      position: absolute
+      margin: 80px 50px 0px 0px

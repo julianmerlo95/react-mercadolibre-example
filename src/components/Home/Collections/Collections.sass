@@ -1,12 +1,13 @@
 @import '../../../globalStyle'
 
-  .collections
-    width: 1200px
-    margin: 0 auto
-    margin-top: 3%
-
+.collections
+  width: $box-width-global
+  margin: $box-margin-global
+  margin-top: 3%
+  &__title
+    font-size: 22px
 .collections__block
-  display: flex
+  display: $box-display-global
 
   &__left
     width: 40%
@@ -16,10 +17,10 @@
   &__left__img
     width: 100%
     border-radius: 5px
-    box-shadow: 0px 0px 2px gray
+    box-shadow: $box-shadow
 
   &__left__title
-    font-size: 15px
+    font-size: $font-size-secondary
     text-transform: uppercase
     margin-left: 5%
 
@@ -38,9 +39,51 @@
     height: 184px
     margin: 12px
     border-radius: 5px
-    box-shadow: 0px 0px 2px gray
+    box-shadow: $box-shadow
 
 .collections__block__left:hover,
 .collections__block__right__img:hover
-  box-shadow: 0px 0px 13px 3px rgb(201, 201, 201)
+  box-shadow: $box-shadow-hover
   cursor: pointer
+
+@media (max-width: 425px)
+  .collections
+    width: 95%
+    margin-top: 20%
+
+    &__block
+      display: inline-block
+
+    &__block__left
+      width: 95%
+      margin: $box-margin-global
+
+    &__block__right
+      width: 100%
+      margin: $box-margin-global
+      flex-wrap: wrap
+
+    &__block__right__img
+      width: 40%
+      margin-left: 25px
+      flex-wrap: wrap
+
+@media (max-width: 375px)
+  .collections
+    margin-top: 20%
+
+    &__block
+      display: inline-block
+
+    &__block__right
+      width: 100%
+      margin: $box-margin-global
+      flex-wrap: wrap
+
+    &__block__right__img
+      width: 38%
+      flex-wrap: wrap
+
+@media (max-width: 320px)
+  .collections
+    display: none

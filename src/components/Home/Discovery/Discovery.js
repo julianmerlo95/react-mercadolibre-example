@@ -1,5 +1,5 @@
 import React from 'react';
-import './Discovery.css';
+import './Discovery.sass';
 import { arrayDiscovery } from './data';
 
 const Discovery = (props) => {

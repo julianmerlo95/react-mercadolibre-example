@@ -1,7 +1,7 @@
 import React from 'react';
 import { arrayListDownCenter, arrayListDownRight, logo, coronavirus } from './data';
 import { NavLink } from 'react-router-dom';
-import './Navbar.css'
+import './Navbar.sass'
 
 
 
