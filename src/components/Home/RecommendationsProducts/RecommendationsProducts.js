@@ -7,6 +7,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import './RecommendationsProducts.css';
 import Product from './Product/Product';
+// import '../../../styleGlobals.sass'
 
 
 class SliderPrimary extends PureComponent {

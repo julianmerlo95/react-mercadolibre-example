@@ -2,10 +2,10 @@ import coronavirus from '../../../assets/img/logosPrimary/coronavirus.png';
 import logo from '../../../assets/img/logosPrimary/logo.png';
 
 const arrayListDownCenter = [
-  { name: 'categorias', icon: "fas fa-angle-down" },
-  { name: 'ofertas' },
+  { name: 'Categorias', icon: "fas fa-angle-down" },
+  { name: 'Ofertas' },
   { name: 'Historial' },
-  { name: 'Supermercador' },
+  { name: 'Supermercado' },
   { name: 'Tiendas oficiales' },
   { name: 'Vender' },
   { name: 'Ayuda' }
