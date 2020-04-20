@@ -1,0 +1,93 @@
+@import '../../../globalStyle'
+
+.discovery
+  width: $box-width-global
+  margin: $box-margin-global
+
+.discovery__leyend__title
+  width: 62.3%
+  margin: $box-margin-global
+  text-align: left
+  margin-top: 5%
+  color: $text-color-primary
+  font-size: 22px
+
+.discovery__blocks
+  display: flex
+  width: $box-width-global
+  margin: $box-margin-global
+
+  &__content
+    display: flex
+    margin: 10px
+    box-shadow: $box-shadow
+    transition: 0.5s
+    border-radius: 5px
+
+  &__content:hover
+    box-shadow: $box-shadow-hover
+    cursor: pointer
+
+.discovery__blocks__content__title,
+.discovery__blocks__content__description
+  text-align: center
+  text-transform: uppercase
+  margin-top: 45px
+
+.discovery__blocks__content__button
+  width: 90%
+  height: 30px
+  border-radius: 5px
+  background-color: blue
+  color: white
+  margin-left: 6px
+
+.discovery__blocks__content__colum
+  width: 290px
+  height: 250px
+  background-color: white
+  border-radius: 5px
+
+.discovery__blocks__content__img
+  width: 280px
+  height: 250px
+
+@media only screen and (max-width: 425px)
+  .discovery
+    margin-top: 150px
+  .discovery__blocks
+    display: inline-block
+    width: 100%
+    margin: $box-margin-global
+
+  .discovery__leyend__title
+    width: 90%
+    margin: 50% 0% 3% 0%
+    margin: 0%
+
+  .discovery__blocks__content
+    width: 95%
+
+    &:hover
+      cursor: pointer
+      box-shadow: $box-shadow-hover
+      transition: 0.5s
+
+    &__button
+      width: 90%
+      height: 30px
+      border-radius: 5px
+      background-color: blue
+      color: white
+
+@media only screen and (max-width: 375px)
+  .discovery__blocks__content__img
+    width: 100%
+    height: 250px
+
+@media only screen and (max-width: 320px)
+  .discovery__leyend
+    margin-top: 100px
+
+  .discovery__blocks
+    width: 98%

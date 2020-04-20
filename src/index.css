@@ -1,8 +1,6 @@
 body {
   margin: 0;
-  font-family:"Proxima Nova", 
-  -apple-system, "Helvetica Neue",
-   Helvetica, Roboto, Arial, sans-serif;
+  font-family: 'Raleway', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;

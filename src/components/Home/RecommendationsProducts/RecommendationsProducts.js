@@ -5,8 +5,8 @@ import settings from './data';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import './RecommendationsProducts.css';
 import Product from './Product/Product';
+import './RecommendationsProducts.sass'
 
 
 class SliderPrimary extends PureComponent {
@@ -70,7 +70,6 @@ class SliderPrimary extends PureComponent {
     )
   }
 }
-
 
 Product.propTypes = {
   title: PropTypes.string,

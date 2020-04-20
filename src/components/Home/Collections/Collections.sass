@@ -1,0 +1,89 @@
+@import '../../../globalStyle'
+
+.collections
+  width: $box-width-global
+  margin: $box-margin-global
+  margin-top: 3%
+  &__title
+    font-size: 22px
+.collections__block
+  display: $box-display-global
+
+  &__left
+    width: 40%
+    background-color: white
+    border-radius: 5px
+
+  &__left__img
+    width: 100%
+    border-radius: 5px
+    box-shadow: $box-shadow
+
+  &__left__title
+    font-size: $font-size-secondary
+    text-transform: uppercase
+    margin-left: 5%
+
+  &__left__description
+    font-size: 25px
+    text-transform: uppercase
+    margin-left: 5%
+    font-family: 'Raleway', sans-serif
+
+  &__right
+    width: 100%
+    flex-wrap: wrap
+
+  &__right__img
+    width: 184px
+    height: 184px
+    margin: 12px
+    border-radius: 5px
+    box-shadow: $box-shadow
+
+.collections__block__left:hover,
+.collections__block__right__img:hover
+  box-shadow: $box-shadow-hover
+  cursor: pointer
+
+@media (max-width: 425px)
+  .collections
+    width: 95%
+    margin-top: 20%
+
+    &__block
+      display: inline-block
+
+    &__block__left
+      width: 95%
+      margin: $box-margin-global
+
+    &__block__right
+      width: 100%
+      margin: $box-margin-global
+      flex-wrap: wrap
+
+    &__block__right__img
+      width: 40%
+      margin-left: 25px
+      flex-wrap: wrap
+
+@media (max-width: 375px)
+  .collections
+    margin-top: 20%
+
+    &__block
+      display: inline-block
+
+    &__block__right
+      width: 100%
+      margin: $box-margin-global
+      flex-wrap: wrap
+
+    &__block__right__img
+      width: 38%
+      flex-wrap: wrap
+
+@media (max-width: 320px)
+  .collections
+    display: none

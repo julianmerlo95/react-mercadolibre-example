@@ -1,0 +1,62 @@
+@import "../../../globalStyle"
+
+.footer
+  background-color: white
+
+.footer__block__above
+  width: $box-width-global
+  display: $box-display-global
+  margin: $box-margin-global
+  text-align: center
+  padding: 50px
+
+  &__shipping
+    padding: 25px
+
+.footer__block__down
+  display: $box-display-global
+  width: $box-width-global
+  margin: $box-margin-global
+  text-align: center
+
+  &__list
+    display: $box-display-global
+    list-style: none
+    width: 70%
+
+  &__list__item
+    margin-right: 15px
+
+  &__button
+    width: 337px
+    margin: 0%
+    margin-top: 13px
+    background-color: $text-color-three
+    font-size: $font-size-secondary
+    border-radius: 15px
+    padding: 7px
+    cursor: pointer
+
+.footer__block__above__shipping__description--primary
+  font-size: 17px
+  color: $text-color-primary
+
+.footer__block__above__shipping__description--secondary
+  font-size: $font-size-secondary
+  color: $text-color-secondary
+
+@media only screen and (max-width: 425px)
+  .footer
+    width: 100%
+    margin-top: 23%
+
+    &__block__above
+      width: 75%
+      margin: $box-margin-global
+      display: inline-block
+
+    &__block__above__shipping
+      width: 85%
+
+    &__block__down
+      display: none

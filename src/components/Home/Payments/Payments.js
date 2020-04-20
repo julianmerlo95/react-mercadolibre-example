@@ -1,6 +1,6 @@
 import React from 'react';
 import arrayPayments from './data';
-import './Payments.css';
+import './Payments.sass';
 
 const PaymentsMethod = () => {
   return (

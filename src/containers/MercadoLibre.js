@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import './MercadoLibre.css';
 import {
   Layout, RecommendationsProducts, Discovery,
   Collections, Categories
@@ -36,7 +35,7 @@ class MercadoLibre extends Component {
 
           <RecommendationsProducts
             products="fox"
-            leyend="Relacionado con tus visitas en Autos, Motos y Otros"
+            leyend="Relacionado con tus visitas en Autos y Otros"
             leyendAdici="Ver favoritos" />
 
           <Discovery

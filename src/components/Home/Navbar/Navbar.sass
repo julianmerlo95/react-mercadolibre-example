@@ -1,0 +1,200 @@
+@import '../../../globalStyle'
+
+.navbar
+  background-color: $text-color-three
+  height: 89px
+  padding-top: 12px
+
+.navbar__hidden
+  display: none
+
+.navbar__high
+  display: $box-display-global
+  width: $box-width-global
+  margin: $box-margin-global
+
+  &__input--meli
+    width: 25%
+
+  &__block
+    width: 50%
+
+  &__input--coronavirus
+    width: 30%
+
+  &__img--logo
+    width: 134px
+    height: 34px
+
+  &__block
+    width: 80%
+
+  &__input
+    width: 570px
+    height: 35px
+
+  &__block
+    width: 60%
+    margin-right: 65px
+    height: 39px
+    text-align: center
+    display: $box-display-global
+
+  &__input
+    font-size: $font-size-primary
+    line-height: 21px
+    border: 1px solid white
+    box-shadow: $box-shadow
+
+  &__input::placeholder
+    padding: 10px
+    background-color: white
+    color: $text-color-primary
+    font-size: $font-size-primary
+
+  &__block__icon
+    height: 36.5px
+    width: 30px
+    background-color: white
+    border-left: 1px solid black
+    border: 1px solid white
+    box-shadow: $box-shadow
+
+  &__icon
+    width: 2%
+    color: $text-color-primary
+    height: 100%
+    margin: 13px 14px 0px 0px
+
+  //DOWN
+.navbar__down
+  display: $box-display-global
+  width: $box-width-global
+  margin: $box-margin-global
+
+  &__send
+    width: 12%
+    display: $box-display-global
+
+  &__list--center
+    width: 50%
+    display: $box-display-global
+    justify-content: space-around
+    list-style: none
+    text-align: right
+    margin-right: 40px
+
+  &__list--right
+    width: 38%
+    display: $box-display-global
+    list-style: none
+    padding: 0%
+
+.navbar__high__img--coronavirus
+  width: 340px
+  height: 39px
+
+.navbar__down__list--right__item
+  margin-left: 30px
+
+.navbar__down__list--center a
+  color: rgba(51,51,51,.6)
+  list-style: none
+  text-decoration: none
+  font-size: 14px
+
+.navbar__down__list--right a
+  color: rgba(39, 38, 38, 0.6)
+  list-style: none
+  text-decoration: none
+  font-size: $font-size-secondary
+
+.navbar__down__list--center__icon--user
+  color: rgba(39, 38, 38, 0.6)
+
+.navbar__down__block
+  width: 100%
+
+.navbar__down__send__icon
+  margin: 14px 5px 0px 0px
+  color: rgba(39, 38, 38, 0.6)
+
+.navbar__down__block__description
+  position: absolute
+  margin-top: 10px
+  font-size: $font-size-secondary
+  color: rgba(29, 28, 28, 0.6)
+  font-family: 'Raleway', sans-serif
+
+.navbar__down__block__title
+  color: rgba(39, 39, 39, 0.6)
+  font-size: $font-size-secondary
+  font-family: 'Raleway', sans-serif
+
+@media (max-width: 425px)
+  .navbar__high, .navbar__down
+    display: none
+
+  .navbar__hidden
+    display: inline
+
+  .navbar__high__left__hidden,
+  .navbar__high__right__hidden
+    width: 10%
+
+  .navbar__high__center__hidden
+    width: 70%
+
+  .navbar__high__block__hidden
+    display: $box-display-global
+    justify-content: space-around
+    width: 100%
+
+  .navbar__high__input--hidden
+    width: 100%
+    height: 32px
+    font-size: $font-size-secondary
+    line-height: 21px
+    border: 1px solid white
+    box-shadow: $box-shadow
+    border-radius: 2px
+
+  .navbar__high__input--hidden::placeholder
+    padding: 10px
+    background-color: white
+    color: $text-color-primary
+    font-size: $font-size-secondary
+
+  .navbar__high__icon__hidden
+    font-size: 20px
+    margin: 8px 0px 0px 10px
+    color: $text-color-primary
+
+  .navbar__high__block__down__hidden
+    display: $box-display-global
+    justify-content: space-between
+    margin-top: 2%
+    border-top: 1px solid $text-color-primary
+
+  .navbar__high__title__left__hidden
+    margin-left: 7px
+    color: $text-color-primary
+
+  .navbar__high__icon__down__hidden
+    margin: 20px 15px 0px 0px
+    color: $text-color-primary
+
+  .navbar__high__left__send__hidden
+    display: $box-display-global
+    width: 100%
+
+  .navbar__high__icon__left__hidden
+    margin: 5% 0% 0% 4%
+    color: $text-color-primary
+
+@media (max-width: 320px)
+  .navbar__high, .navbar__down
+    display: none
+
+  .navbar
+    display: 100%
