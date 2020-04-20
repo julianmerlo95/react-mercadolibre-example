@@ -55,7 +55,7 @@ const Navbar = () => {
             </div>
             <div className="navbar__down__block">
               <h5 className="navbar__down__block__description">Enviar a Juan Perez</h5>
-              <h5 className="navbar__down__block__title">Enviar a Rosello</h5>
+              <h5 className="navbar__down__block__title">Rosello 70</h5>
             </div>
           </div>
           <ul className="navbar__down__list--center">

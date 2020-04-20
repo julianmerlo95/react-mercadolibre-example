@@ -1,6 +1,6 @@
 import React from 'react';
 import { arrayFooter, arrayFooterList } from './data';
-import './Footer.sass'
+import './Footer.css'
 
 
 const Footer = () => {
