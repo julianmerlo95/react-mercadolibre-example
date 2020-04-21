@@ -1,20 +1,18 @@
 @import '../../../../globalStyle'
 
-  .product__leyend
-    display: flex
-    justify-content: flex-start
+.product__leyend
+  display: $box-display-global
+  justify-content: flex-start
 
 .product__leyend__title
   margin-left: 1%
   height: 100%
 
 .product__leyend__description
-  color: rgb(52, 131, 250)
-  margin-top: 23px
-  margin-right: 10px
-  margin-left: 10px
+  color: $text-color-secondary
+  margin: 23px 10px 0px 10px
   cursor: pointer
-  font-size: 16px
+  font-size: $font-size-primary
   height: 100%
 
 .product__leyend__title
@@ -26,21 +24,21 @@
   background-color: white
   margin: 8px
   height: 310px
-  box-shadow: 0px 0px 1px gray
+  box-shadow: $box-shadow
   border-radius: 5px
   transition: 0.5s
   cursor: pointer
 
 .product_block-show:hover
   cursor: pointer
-  box-shadow: 0px 2px 5px 3px rgb(211, 211, 211)
+  box-shadow: $box-shadow-hover
 
 .product_block-show
   margin-right: 5px
   background-color: white
   margin: 8px
   height: 325px
-  box-shadow: 0px 0px 1px gray
+  box-shadow: $box-shadow
   border-radius: 5px
   transition: 0.5s
   cursor: pointer
@@ -49,7 +47,7 @@
   width: 97%
   object-fit: contain
   display: block
-  margin: 0 auto
+  margin: $box-margin-global
   height: 224px
   border-bottom: 1px solid rgb(209, 209, 209)
 
@@ -61,10 +59,8 @@
   box-sizing: border-box
   color: black
   font-size: 24px
-  font-weight: 500
-  font-family: Proxima Nova,-apple-system,
- Helvetica Neue,Helvetica,Roboto,
- Arial,sans-serif
+  font-weight: 100
+  font-family: 'Manrope', sans-serif
 
 .product_block__description--hidden
   margin: 0% auto
@@ -76,7 +72,7 @@
   &-show
     width: 100%
     padding: 1px
-    margin: 0 auto
+    margin: $box-margin-global
     text-align: center
     display: inline-block
     color: black
@@ -85,8 +81,7 @@
 
 .product_block__icon--love
   position: absolute
-  margin-left: 155px
-  margin-top: 5px
+  margin: 5px 0px 0px 155px
   color: blue
   background-color: rgb(255, 253, 253)
   opacity: 0.6
@@ -95,10 +90,68 @@
 
 .product_block__icon--truck
   position: absolute
-  margin-left: 165px
-  margin-top: 206px
+  margin: 206px 0px 0px 165px
   color: #39b54a
   border: 1px solid rgb(209, 209, 209)
   padding: 6px
   border-radius: 150px
   background-color: white
+
+@media (max-width: 425px)
+  .product__leyend
+    display: flex
+    justify-content: space-between
+
+  .product_block__img
+    width: 95%
+    margin: $box-margin-global
+    height: 224px
+
+  .product_block-show
+    margin-right: 5px
+    background-color: white
+    margin: 8px
+    height: 325px
+    box-shadow: $box-shadow
+    border-radius: 5px
+    transition: 0.5s
+    cursor: pointer
+
+  .product__leyend__title
+    color: $text-color-secondary
+    font-size: 20px
+
+  .product_block__icon
+    margin-left: 140px
+
+  .product_block__icon--truck
+    position: absolute
+    margin-left: 145px
+    margin-top: 206px
+
+@media (max-width: 400px)
+  .product_block__icon--truck,
+  .product_block__icon--love
+    display: none
+
+@media (max-width: 320px)
+  .product_block
+    width: 80%
+    margin: $box-margin-global
+
+    &-show
+      width: 80%
+      margin: $box-margin-global
+      height: 320px
+
+    &__icon
+      margin-left: 180px
+
+    &__icon--truck
+      position: absolute
+      margin-left: 185px
+      margin-top: 206px
+
+    &__icon--love
+      position: absolute
+      margin-left: 200px
