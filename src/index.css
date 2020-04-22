@@ -10,3 +10,10 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@media (max-width: 320px){
+  body{
+    width: 320px;
+    background-color: #ebebeb;
+  }
+}

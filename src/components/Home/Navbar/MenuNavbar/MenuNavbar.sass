@@ -1,0 +1,65 @@
+@import '../../../../globalStyle'
+
+.menu
+  width: 100%
+  z-index: 100
+  margin: 0
+  transition: 1s
+
+  &__date__personal
+    display: $box-display-global
+    background: white
+    padding: 10px
+
+.menu__date__personal__left
+  width: 30%
+  display: $box-display-global
+  justify-content: center
+
+  &__img
+    width: 50%
+    border-radius: 50px
+    background: rgb(228, 228, 228)
+    border: 3px solid rgb(106, 156, 230)
+
+.menu__date__personal__right__title
+  font-size: 14px!important
+  text-align: left!important
+  margin-bottom: 0%
+
+.menu__date__personal__right__mercado__pago
+  font-size: 16px!important
+  text-align: left
+  margin-top: 5px
+
+.menu__list
+  background-color: white
+  border-top: 1px solid $text-color-primary
+
+  &__ul
+    margin: 0
+    margin-top: 20px
+
+.menu__date__personal__right__title
+  color: black
+  text-align: center
+  font-size: $font-size-secondary
+
+.menu__date__personal__right__mercado__pago
+  text-align: center
+  font-size: 20px
+
+.menu__list__ul__li
+  width: 100%
+  display: $box-display-global
+
+  &__img
+    margin-top: 9px
+    font-size: 21px
+
+  &__title
+    margin-left: 6%
+    font-size: 14px
+
+@media screen and ( min-width:426px)
+  display: none

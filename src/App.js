@@ -1,11 +1,17 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import Mercadolibre from './containers/MercadoLibre'
+import { Context } from './context/Context';
 import Aux from './hoc/aux';
+import './App.sass';
 
 const App = () => {
+
+  const context = useContext(Context);
+  const { toggleMood } = context;
+
   return (
     <Aux>
-      <main style={{ backgroundColor: '#ebebeb' }}>
+      <main className={`app${toggleMood === true ? '__night' : ""}`}>
         <Mercadolibre />
       </main>
     </Aux>

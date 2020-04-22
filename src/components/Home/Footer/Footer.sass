@@ -2,6 +2,7 @@
 
 .footer
   background-color: white
+  transition: 0.5s
 
 .footer__block__above
   width: $box-width-global
@@ -30,11 +31,19 @@
   &__button
     width: 337px
     margin: 0%
-    margin-top: 13px
+    margin: 13px 0px 13px 0px
     background-color: $text-color-three
     font-size: $font-size-secondary
     border-radius: 15px
     padding: 7px
+    cursor: pointer
+
+  &__button--night
+    color: $text-color-three
+    background-color: black
+    border-radius: 3px
+
+  &__button--night:hover
     cursor: pointer
 
 .footer__block__above__shipping__description--primary
@@ -59,4 +68,52 @@
       width: 85%
 
     &__block__down
+      width: 100%
+      display: inline-block
+      text-align: center
+
+    &__block__down__list__item
       display: none
+
+  .footer__block__down__button
+    margin-left: 4%
+    width: 90%
+
+@media screen and (max-width: 375px)
+  .footer__block__down__button
+    margin-left: 3%
+
+//MOOD NIGHT
+.footer__block__above__shipping__night
+  border: 1px solid white
+  margin: 10px
+  border-radius: 7px
+  padding: 8px
+
+.footer__night
+  background-color: $text-color-three
+  transition: 0.5s
+
+.footer__block__above__night
+  width: $box-width-global
+  display: $box-display-global
+  margin: $box-margin-global
+  color: black
+  text-align: center
+  padding: 50px
+
+.footer__block__above__shipping__img__night
+  background: white
+  border-radius: 10px
+  padding: 10px
+
+.footer__block__above__shipping__description--primary__night
+  font-size: 17px
+  color: black!important
+
+.footer__block__down__night
+  display: $box-display-global
+  width: $box-width-global
+  margin: $box-margin-global
+  text-align: center
+  color: black

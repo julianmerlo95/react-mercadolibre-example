@@ -2,8 +2,10 @@
 
 .navbar
   background-color: $text-color-three
-  height: 89px
+  height: 104px
   padding-top: 12px
+  z-index: 150
+  width: 100%
 
 .navbar__hidden
   display: none
@@ -137,6 +139,9 @@
   font-weight: bold
 
 @media (max-width: 425px)
+  .navbar
+    position: relative
+
   .navbar__high, .navbar__down
     display: none
 
@@ -198,6 +203,7 @@
     color: $text-color-primary
 
 @media (max-width: 320px)
+
   .navbar__high, .navbar__down
     display: none
 

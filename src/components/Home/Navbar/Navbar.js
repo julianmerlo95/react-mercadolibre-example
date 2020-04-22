@@ -1,19 +1,60 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { arrayListDownCenter, arrayListDownRight, logo, coronavirus } from './data';
 import { NavLink } from 'react-router-dom';
+import MenuNavbar from './MenuNavbar/MenuNavbar';
+import Axios from '../../../axios/axios'
+import Produ from '../../Search/Products/Products'
 import './Navbar.sass'
-
-
 
 const Navbar = () => {
 
+  const [toggleMenu, setToggleMenu] = useState(false)
+
+  // const [searchInput, setSearchInput] = useState("")
+  // const [searchProducts, setSearchProducts] = useState([])
+
+
+  const menuHandler = () => {
+    setToggleMenu(!toggleMenu)
+  }
+
+
+  let renderMenuNavbar = false;
+
+  if (toggleMenu) {
+    renderMenuNavbar = (
+      <div>
+        <MenuNavbar />
+      </div>
+    )
+  }
+
+
+  // const InputHandler = async (event) => {
+  //   const responseInput = event.target.value;
+  //   setSearchInput(responseInput);
+  // }
+
+  // const peticionHttp = async () => {
+  //   const response = await Axios.get('samsung')
+  //   setSearchProducts(response.data.results);
+  // }
+
+  // const searchInputHandler = async () => {
+  //   const response = await Axios.get(searchInput)
+  //   setSearchProducts(response.data);
+  // }
+
+  // useEffect(() => {
+  //   peticionHttp()
+  // }, [])
 
   return (
     <nav className="navbar">
       <div className="navbar__hidden">
         <div className="navbar__high__block__hidden">
           <div className="navbar__high__left__hidden">
-            <i class="navbar__high__icon__hidden fas fa-align-justify"></i>
+            <i onClick={menuHandler} class={`navbar__high__icon__hidden fas fa${toggleMenu === false ? '-bars' : '-times'}`}></i>
           </div>
           <div className="navbar__high__center__hidden">
             <input className="navbar__high__input--hidden" placeholder="Buscar productos, marcas y más..."></input>
@@ -73,7 +114,8 @@ const Navbar = () => {
           </ul>
         </div>
       </>
-    </nav>
+      {renderMenuNavbar}
+    </nav >
   )
 }
 
