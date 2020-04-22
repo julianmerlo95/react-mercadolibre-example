@@ -1,18 +1,25 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useContext } from 'react';
 import { arrayListDownCenter, arrayListDownRight, logo, coronavirus } from './data';
 import { NavLink } from 'react-router-dom';
 import MenuNavbar from './MenuNavbar/MenuNavbar';
 import Axios from '../../../axios/axios'
 import Produ from '../../Search/Products/Products'
+import { Context } from '../../../context/Context';
+
+
 import './Navbar.sass'
 
 const Navbar = () => {
 
-  const [toggleMenu, setToggleMenu] = useState(false)
+  const [toggleMenu, setToggleMenu] = useState(false);
+  const context = useContext(Context);
+  const { toggleMood, changeMoodHandler, sendHttpHandler } = context;
 
-  // const [searchInput, setSearchInput] = useState("")
-  // const [searchProducts, setSearchProducts] = useState([])
 
+
+  const inputHandler = async (event) => {
+    await sendHttpHandler(event.target.value)
+  }
 
   const menuHandler = () => {
     setToggleMenu(!toggleMenu)
@@ -57,7 +64,9 @@ const Navbar = () => {
             <i onClick={menuHandler} class={`navbar__high__icon__hidden fas fa${toggleMenu === false ? '-bars' : '-times'}`}></i>
           </div>
           <div className="navbar__high__center__hidden">
-            <input className="navbar__high__input--hidden" placeholder="Buscar productos, marcas y más..."></input>
+            <input onKeyDown={(event) => inputHandler(event)}
+              className="navbar__high__input--hidden"
+              placeholder="Buscar productos, marcas y más..."></input>
           </div>
           <div className="navbar__high__right__hidden">
             <i class="navbar__high__icon__hidden fas fa-shopping-cart"></i>

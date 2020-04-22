@@ -10,7 +10,6 @@ const Footer = () => {
   const { toggleMood, changeMoodHandler } = context;
   console.log(context);
 
-
   return (
     <section className={`footer${toggleMood === true ? '__night' : ""}`}>
       <div className={`footer__block__above${toggleMood === true ? '__night' : ""}`}>

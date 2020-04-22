@@ -54,35 +54,6 @@
   font-size: $font-size-secondary
   color: $text-color-secondary
 
-@media only screen and (max-width: 425px)
-  .footer
-    width: 100%
-    margin-top: 23%
-
-    &__block__above
-      width: 75%
-      margin: $box-margin-global
-      display: inline-block
-
-    &__block__above__shipping
-      width: 85%
-
-    &__block__down
-      width: 100%
-      display: inline-block
-      text-align: center
-
-    &__block__down__list__item
-      display: none
-
-  .footer__block__down__button
-    margin-left: 4%
-    width: 90%
-
-@media screen and (max-width: 375px)
-  .footer__block__down__button
-    margin-left: 3%
-
 //MOOD NIGHT
 .footer__block__above__shipping__night
   border: 1px solid white
@@ -117,3 +88,54 @@
   margin: $box-margin-global
   text-align: center
   color: black
+
+@media only screen and (max-width: 425px)
+  .footer
+    width: 100%
+    margin-top: 23%
+
+    &__block__above
+      width: 75%
+      margin: $box-margin-global
+      display: inline-block
+
+    &__block__above__shipping
+      width: 85%
+
+    &__block__down
+      width: 100%
+      display: inline-block
+      text-align: center
+
+    &__block__above__night
+      width: 75%!important
+      margin: $box-margin-global!important
+      display: inline-block!important
+
+    &__block__above__shipping__night
+      width: 85%
+
+    &__block__down__night
+      width: 100%!important
+      display: inline-block!important
+      text-align: center!important
+
+    &__block__down__list__item
+      display: none
+
+  .footer__block__down__button
+    margin-left: 4%
+    width: 90%
+
+@media screen and (max-width: 375px)
+  .footer
+    margin-top: 23%
+
+  .footer__block__down__button
+    margin-left: 3%
+
+  .footer__block__above
+    padding: 40px
+
+  .footer__block__above__night
+    padding: 40px!important

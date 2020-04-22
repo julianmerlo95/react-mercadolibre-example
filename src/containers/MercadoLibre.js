@@ -29,6 +29,7 @@ class MercadoLibre extends Component {
             products="televisores"
             leyend="Ofertas"
             leyendAdici="Ver todas" />
+
           <Discovery
             leyend="Descubrí" />
 
