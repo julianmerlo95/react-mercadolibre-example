@@ -19,7 +19,7 @@ const CategoriesCircle = () => {
           <div onClick={() => changeBackgroundHandler(index)}
             className="categoriesCircle__block" key={index}>
             <i class={`categoriesCircle__block__icon${backgroundInitial === index ? "--show" : ""} ${item.icon}`}></i>
-            <h3 className={`categoriesCircle__block__title${backgroundInitial === index ? "--show" : ""}`}>
+            <h3 className={`style-font categoriesCircle__block__title${backgroundInitial === index ? "--show" : ""}`}>
               {item.title}</h3>
           </div>
         )

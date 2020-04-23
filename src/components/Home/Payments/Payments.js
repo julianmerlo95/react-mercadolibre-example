@@ -9,7 +9,7 @@ const PaymentsMethod = () => {
         <img className="payments__movil__img" src={arrayPayments[0].img} alt="alt payments"></img>
         <div>
           <h2 className="payments__movil__title style-font">{arrayPayments[0].name}</h2>
-          <p className=" payments__movil__description style-font">{arrayPayments[0].description}</p>
+          <p className=" payments__movil__description ">{arrayPayments[0].description}</p>
         </div>
       </div>
       {arrayPayments.map((item, index) => {

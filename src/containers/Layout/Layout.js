@@ -9,8 +9,8 @@ const Layout = (props) => {
         <Navbar />
       </BrowserRouter>
       <SliderPrimary />
-      <Payments />
       <CategoriesCircle />
+      <Payments />
       <>
         {props.children}
       </>

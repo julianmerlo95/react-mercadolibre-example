@@ -9,18 +9,20 @@
   margin-left: 6px
 
   &__icon
-    font-size: 40px
+    font-size: 35px
     background: white
     padding: 20px
     border-radius: 150px
     color: $text-color-primary
+    box-shadow: -1px 2px 1px rgb(201, 201, 201)
 
   &__icon--show
-    font-size: 40px
+    font-size: 35px
     background: white
     padding: 20px
     border-radius: 150px
     color: $text-color-secondary
+    box-shadow: -1px 2px 2px rgb(201, 201, 201)
 
   &__title
     font-size: 13px
@@ -30,8 +32,42 @@
     font-size: 13px
     text-align: center
     color: $text-color-secondary
-  .prueba--show:hover
-    color: red
 
-@media screen and ( min-width:425px)
+@media screen and ( min-width:426px)
   display: none
+
+@media only screen and(max-width: 375px)
+
+  .categoriesCircle__block
+    &__icon
+      font-size: 35px
+      background: white
+      padding: 18px
+      border-radius: 150px
+      color: $text-color-primary
+      box-shadow: -1px 2px 1px rgb(201, 201, 201)
+
+    &__icon--show
+      font-size: 35px
+      background: white
+      padding: 18px
+      border-radius: 150px
+      color: $text-color-secondary
+      box-shadow: -1px 2px 2px rgb(201, 201, 201)
+
+    &__title
+      font-size: 12px
+      text-align: center
+
+    &__title--show
+      font-size: 12px
+      text-align: center
+      color: $text-color-secondary
+
+@media only screen and(max-width: 320px)
+  .categoriesCircle__block
+    display: none
+
+@media only screen and(min-width: 426px)
+  .categoriesCircle
+    display: none
