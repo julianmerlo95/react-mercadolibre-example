@@ -1,30 +1,25 @@
-import React, { useState, useContext } from 'react';
+import React, { useState } from 'react';
 import { arrayListDownCenter, arrayListDownRight, logo, coronavirus } from './data';
 import { NavLink } from 'react-router-dom';
 import MenuNavbar from './MenuNavbar/MenuNavbar';
 import Axios from '../../../axios/axios'
-import Produ from '../../Search/Products/Products'
-import { Context } from '../../../context/Context';
-
+import ProductComponent from '../../Search/Products/Products'
 
 import './Navbar.sass'
 
 const Navbar = () => {
 
   const [toggleMenu, setToggleMenu] = useState(false);
-  const context = useContext(Context);
-  const { toggleMood, changeMoodHandler, sendHttpHandler } = context;
-
-
+  const [arrayProducts, setArrayProducts] = useState([])
 
   const inputHandler = async (event) => {
-    await sendHttpHandler(event.target.value)
+    const response = await Axios.get(event.target.value);
+    setArrayProducts(response.data.results);
   }
 
   const menuHandler = () => {
-    setToggleMenu(!toggleMenu)
+    setToggleMenu(!toggleMenu);
   }
-
 
   let renderMenuNavbar = false;
 
@@ -36,36 +31,16 @@ const Navbar = () => {
     )
   }
 
-
-  // const InputHandler = async (event) => {
-  //   const responseInput = event.target.value;
-  //   setSearchInput(responseInput);
-  // }
-
-  // const peticionHttp = async () => {
-  //   const response = await Axios.get('samsung')
-  //   setSearchProducts(response.data.results);
-  // }
-
-  // const searchInputHandler = async () => {
-  //   const response = await Axios.get(searchInput)
-  //   setSearchProducts(response.data);
-  // }
-
-  // useEffect(() => {
-  //   peticionHttp()
-  // }, [])
-
   return (
     <nav className="navbar">
       <div className="navbar__hidden">
         <div className="navbar__high__block__hidden">
           <div className="navbar__high__left__hidden">
-            <i onClick={menuHandler} class={`navbar__high__icon__hidden fas fa${toggleMenu === false ? '-bars' : '-times'}`}></i>
+            <i onClick={menuHandler}
+              class={`navbar__high__icon__hidden fas fa${toggleMenu === false ? '-bars' : '-times'}`}></i>
           </div>
           <div className="navbar__high__center__hidden">
-            <input onKeyDown={(event) => inputHandler(event)}
-              className="navbar__high__input--hidden"
+            <input className="navbar__high__input--hidden"
               placeholder="Buscar productos, marcas y más..."></input>
           </div>
           <div className="navbar__high__right__hidden">
@@ -88,7 +63,8 @@ const Navbar = () => {
             <img src={logo} className="navbar__high__img--logo" alt="alt narvar"></img>
           </div>
           <div className="navbar__high__block">
-            <input className="navbar__high__input"
+            <input onKeyPress={(event) => inputHandler(event)}
+              className="navbar__high__input"
               placeholder="Buscar productos, marcas y más..."></input>
             <div className="navbar__high__block__icon">
               <i className="navbar__high__icon fas fa-search"></i>
@@ -124,6 +100,7 @@ const Navbar = () => {
         </div>
       </>
       {renderMenuNavbar}
+      {<ProductComponent arrayProducts={arrayProducts} />}
     </nav >
   )
 }

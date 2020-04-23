@@ -3,22 +3,27 @@ import './Product.sass'
 
 const Product = (props) => {
 
+  const { index, showsHeightHandler,
+    hiddenHeightHandler, showHover,
+    shipping, thumbnail, price, title
+  } = props;
+
   return (
     <>
       <>
-        <div key={props.index} onMouseOver={props.showsHeightHandler} onMouseLeave={props.hiddenHeightHandler}
-          className={`style-font product_block${props.showHover === props.index ? '-show' : ""}`}>
-          {props.shipping ?
+        <div key={index} onMouseOver={showsHeightHandler} onMouseLeave={hiddenHeightHandler}
+          className={`style-font product_block${showHover === index ? '-show' : ""}`}>
+          {shipping ?
             <span className="product_block__icon--truck"><i className="fas fa-truck"></i></span>
             : null}
-          {props.showHover === props.index ?
+          {showHover === index ?
             <span className="product_block__icon--love"><i className="far fa-heart"></i></span>
             : null}
-          <img className="product_block__img" src={props.thumbnail} alt="alt product"></img>
-          <h3 className="product_block__price ">${props.price.split(',', 1)}</h3>
+          <img className="product_block__img" src={thumbnail} alt="alt product"></img>
+          <h3 className="product_block__price ">${price.split(',', 1)}</h3>
           <p className={`style-font 
-          product_block__description--hidden${props.showHover === props.index ? '-show' : ""}`}>
-            {props.title}
+          product_block__description--hidden${showHover === index ? '-show' : ""}`}>
+            {title}
           </p>
         </div>
       </>

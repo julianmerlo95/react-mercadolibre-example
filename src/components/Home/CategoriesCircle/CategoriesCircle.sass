@@ -1,0 +1,37 @@
+@import '../../../globalStyle'
+
+.categoriesCircle
+  display: $box-display-global
+  margin-top: 10%
+
+.categoriesCircle__block
+  width: 20%
+  margin-left: 6px
+
+  &__icon
+    font-size: 40px
+    background: white
+    padding: 20px
+    border-radius: 150px
+    color: $text-color-primary
+
+  &__icon--show
+    font-size: 40px
+    background: white
+    padding: 20px
+    border-radius: 150px
+    color: $text-color-secondary
+
+  &__title
+    font-size: 13px
+    text-align: center
+
+  &__title--show
+    font-size: 13px
+    text-align: center
+    color: $text-color-secondary
+  .prueba--show:hover
+    color: red
+
+@media screen and ( min-width:425px)
+  display: none

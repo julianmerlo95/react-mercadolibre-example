@@ -5,9 +5,6 @@ import {
   Collections, Categories
 } from './data';
 
-
-// import Produ from '../components/Search/Products/Products';
-
 class MercadoLibre extends Component {
 
   render() {

@@ -29,5 +29,4 @@ const Discovery = (props) => {
   )
 }
 
-
 export default Discovery;

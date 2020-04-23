@@ -8,7 +8,6 @@ const Footer = () => {
 
   const context = useContext(Context);
   const { toggleMood, changeMoodHandler } = context;
-  console.log(context);
 
   return (
     <section className={`footer${toggleMood === true ? '__night' : ""}`}>

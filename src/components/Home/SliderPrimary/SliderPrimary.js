@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
 import Slider from "react-slick";
+import './SliderPrimary.sass';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import './SliderPrimary.sass';
-
 import { settings, arrayImg } from './data';
 
 class SliderPrimary extends Component {

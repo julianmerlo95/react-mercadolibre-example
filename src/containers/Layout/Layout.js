@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter } from 'react-router-dom';
-import { Navbar, SliderPrimary, Payments, Footer } from './data';
+import { Navbar, SliderPrimary, Payments, Footer, CategoriesCircle } from './data';
 
 const Layout = (props) => {
   return (
@@ -10,6 +10,7 @@ const Layout = (props) => {
       </BrowserRouter>
       <SliderPrimary />
       <Payments />
+      <CategoriesCircle />
       <>
         {props.children}
       </>
