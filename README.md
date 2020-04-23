@@ -13,14 +13,20 @@ Estructura de la pagina
     -    axios
     -    components
     -              home  
-    -                  Categories
+    - -----------------Categories
     -                  Collections
     -                  Discovery
     -                  Footer
     -                  Navbar
+    -                        MenuNavbar
     -                  Payments
     -                  RecommendationsProducts
+    -                                         Product
     -                  SliderPrimary
+    -                  CategoriesCircle
+    -              Search
+    -                    Products
+    -                            Product
     -    containers
     -              Layout
     -    contex
