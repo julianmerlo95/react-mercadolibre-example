@@ -8,29 +8,29 @@
 Estructura de la pagina 
 
     - src/
-    -    assets
-    -          img
-    -    axios
-    -    components
-    -              home  
+    - ---assets
+    - ---------img
+    - ---axios
+    - ---components
+    - -------------home  
     - -----------------Categories
-    -                  Collections
-    -                  Discovery
-    -                  Footer
-    -                  Navbar
-    -                        MenuNavbar
-    -                  Payments
-    -                  RecommendationsProducts
-    -                                         Product
-    -                  SliderPrimary
-    -                  CategoriesCircle
-    -              Search
-    -                    Products
-    -                            Product
-    -    containers
-    -              Layout
-    -    contex
-    -    hoc
+    - -----------------Collections
+    - -----------------Discovery
+    - -----------------Footer
+    - -----------------Payments
+    - -----------------SliderPrimary
+    - -----------------CategoriesCircle
+    - -----------------Navbar
+    - -----------------------MenuNavbar
+    - -----------------RecommendationsProducts
+    - --------------------------------------- Product
+    - ------------Search
+    - ------------------Products
+    - --------------------------Product
+    - ---containers
+    - -------------Layout
+    - ---contex
+    - ---hoc
 
 Conceptos que se implementaron en el proyecto
 ```
