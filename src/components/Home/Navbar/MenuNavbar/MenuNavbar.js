@@ -1,13 +1,13 @@
 import React from 'react';
 import './MenuNavbar.sass'
-import { img, arrayList, arrayListTwo, arrayListThree } from './data';
+import { user, arrayList, arrayListTwo, arrayListThree } from './data';
 
 const MenuNavbar = () => {
   return (
     <div className="menu">
       <div className="menu__date__personal">
         <div className="menu__date__personal__left">
-          <img alt="img-menuNavbar" className="menu__date__personal__left__img" src={img}></img>
+          <svg className="menu__date__personal__left__img" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0V0z" fill="none" /><path d={user} /></svg>
         </div>
         <div className="menu__date__personal__right">
           <h3 className="menu__date__personal__right__title style-font">Hola Juan</h3>
@@ -19,7 +19,7 @@ const MenuNavbar = () => {
           {arrayList.map((item, index) => {
             return (
               <li ke={index} className="menu__list__ul__li">
-                <i class={`menu__list__ul__li__img ${item.icon}`}></i>
+                <svg className="menu__list__ul__li__img" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0V0z" fill="none" /><path d={item.icon} /></svg>
                 <h3 className="menu__list__ul__li__title style-font">{item.title}</h3>
               </li>
             )
@@ -31,7 +31,7 @@ const MenuNavbar = () => {
           {arrayListTwo.map((item, index) => {
             return (
               <li ke={index} className="menu__list__ul__li">
-                <i class={`menu__list__ul__li__img ${item.icon}`}></i>
+                <svg className="menu__list__ul__li__img" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0V0z" fill="none" /><path d={item.icon} /></svg>
                 <h3 className="menu__list__ul__li__title style-font">{item.title}</h3>
               </li>
             )
@@ -43,7 +43,7 @@ const MenuNavbar = () => {
           {arrayListThree.map((item, index) => {
             return (
               <li ke={index} className="menu__list__ul__li">
-                <i class={`menu__list__ul__li__img ${item.icon}`}></i>
+                <svg className="menu__list__ul__li__img" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0V0z" fill="none" /><path d={item.icon} /></svg>
                 <h3 className="menu__list__ul__li__title style-font">{item.title}</h3>
               </li>
             )

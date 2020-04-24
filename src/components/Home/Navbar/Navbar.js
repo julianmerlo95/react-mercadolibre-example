@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
-import { arrayListDownCenter, arrayListDownRight, logo, coronavirus } from './data';
+import {
+  order, cross, shop, arrayListDownCenter,
+  arrayListDownRight, logo, coronavirus, location
+} from './data';
 import { NavLink } from 'react-router-dom';
 import MenuNavbar from './MenuNavbar/MenuNavbar';
 
@@ -28,20 +31,25 @@ const Navbar = (props) => {
       <div className="navbar__hidden">
         <div className="navbar__high__block__hidden">
           <div className="navbar__high__left__hidden">
-            <i onClick={menuHandler}
-              class={`navbar__high__icon__hidden fas fa${toggleMenu === false ? '-bars' : '-times'}`}></i>
+            <svg onClick={menuHandler} className={`navbar__high__icon__hidden fas fa${toggleMenu === false ? '-bars' : '-times'}`}
+              xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
+              <path d="M0 0h24v24H0V0z" fill="none" /><path d={`${toggleMenu === false ? `${order}` : `${cross}`}`} /></svg>
           </div>
           <div className="navbar__high__center__hidden">
             <input className="navbar__high__input--hidden"
               placeholder="Buscar productos, marcas y más..."></input>
           </div>
           <div className="navbar__high__right__hidden">
-            <i class="navbar__high__icon__hidden fas fa-shopping-cart"></i>
+            <svg className={`navbar__high__icon__hidden fas fa${toggleMenu === false ? '-bars' : '-times'}`}
+              xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
+              <path d="M0 0h24v24H0V0z" fill="none" /><path d={shop} /></svg>
           </div>
         </div>
         <div className="navbar__high__block__down__hidden">
           <div className="navbar__high__left__send__hidden">
-            <i class="navbar__high__icon__left__hidden fas fa-map-marker-alt"></i>
+            <svg className={`navbar__high__icon__left__hidden`}
+              xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
+              <path d="M0 0h24v24H0V0z" fill="none" /><path d={location} /></svg>
             <h5 className="navbar__high__title__left__hidden style-font">Enviar a Juan Perez</h5>
           </div>
           <div className="navbar__high__center__down__hidden">
@@ -69,7 +77,9 @@ const Navbar = (props) => {
         <div className="navbar__down">
           <div className="navbar__down__send">
             <div>
-              <i className="navbar__down__send__icon fas fa-map-marker-alt"></i>
+              <svg className={`navbar__down__send__icon`}
+                xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
+                <path d="M0 0h24v24H0V0z" fill="none" /><path d={location} /></svg>
             </div>
             <div className="navbar__down__block">
               <h5 className="navbar__down__block__description">Enviar a Juan Perez</h5>
@@ -84,10 +94,13 @@ const Navbar = (props) => {
           </ul>
           <ul className="navbar__down__list--right">
             {arrayListDownRight.map((item, index) =>
-              <li key={index} className="navbar__down__list--right__item">
-                <i className={`navbar__down__list--center__icon--user ${item.iconUser}`}></i>
-                <NavLink to={item.name}> {item.name} <i className={`navbar__down__list--center__icon ${item.icon}`}>
-                </i></NavLink></li>)}
+              <div className="navbar__down__list__container">
+                <li key={index} className="navbar__down__list--right__item">{item.name}</li>
+                <svg className={`navbar__down__list--center__icon`}
+                  xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -5 24 24" width="23">
+                  <path d="M0 0h24v24H0V0z" fill="none" /><path d={item.icon} /></svg>
+              </div>
+            )}
           </ul>
         </div>
       </>
