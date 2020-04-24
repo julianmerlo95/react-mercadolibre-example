@@ -6,6 +6,7 @@ const Products = (props) => {
   const { arrayProducts } = props;
 
   const [showHover, setShowHover] = useState(false);
+  const [prueba, a] = useState(true);
 
   const showsHeightHandler = (index) => {
     setShowHover({ showHover: index });
@@ -20,6 +21,8 @@ const Products = (props) => {
       {arrayProducts === [] ? false :
         arrayProducts && arrayProducts.map((product, index) =>
           <Product
+            arrayProducts={arrayProducts}
+            prueba={prueba}
             thumbnail={product.thumbnail}
             price={new Intl.NumberFormat("de-AR").format(product.price)}
             title={product.title}

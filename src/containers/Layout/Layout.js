@@ -1,18 +1,16 @@
 import React from 'react';
 import { BrowserRouter } from 'react-router-dom';
-import { Navbar, SliderPrimary, Payments, Footer, CategoriesCircle } from './data';
+import { Navbar, Footer } from './data';
 
 const Layout = (props) => {
+  const { children } = props;
   return (
     <>
       <BrowserRouter>
         <Navbar />
       </BrowserRouter>
-      <SliderPrimary />
-      <CategoriesCircle />
-      <Payments />
       <>
-        {props.children}
+        {children}
       </>
       <Footer />
     </>

@@ -17,7 +17,7 @@ export class ContextProvider extends Component {
       <>
         <Context.Provider value={{
           toggleMood: this.state.toggleMood,
-          changeMoodHandler: this.changeMoodHandler
+          changeMoodHandler: this.changeMoodHandler,
         }}>
 
           {this.props.children}

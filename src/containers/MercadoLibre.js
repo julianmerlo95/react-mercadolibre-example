@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import './MercadoLibre.sass';
 import {
-  Layout, RecommendationsProducts, Discovery,
-  Collections, Categories
+  RecommendationsProducts, Discovery,
+  Collections, Categories, CategoriesCircle,
+  Payments, SliderPrimary, Layout
 } from './data';
 
 class MercadoLibre extends Component {
@@ -12,6 +13,12 @@ class MercadoLibre extends Component {
     return (
       <>
         <Layout>
+          <SliderPrimary />
+
+          <CategoriesCircle />
+
+          <Payments />
+
           <RecommendationsProducts
             products="macbook pro"
             leyend="Basado en tu última visita"

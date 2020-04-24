@@ -2,20 +2,12 @@ import React, { useState } from 'react';
 import { arrayListDownCenter, arrayListDownRight, logo, coronavirus } from './data';
 import { NavLink } from 'react-router-dom';
 import MenuNavbar from './MenuNavbar/MenuNavbar';
-import Axios from '../../../axios/axios'
-import ProductComponent from '../../Search/Products/Products'
 
 import './Navbar.sass'
 
-const Navbar = () => {
+const Navbar = (props) => {
 
   const [toggleMenu, setToggleMenu] = useState(false);
-  const [arrayProducts, setArrayProducts] = useState([])
-
-  const inputHandler = async (event) => {
-    const response = await Axios.get(event.target.value);
-    setArrayProducts(response.data.results);
-  }
 
   const menuHandler = () => {
     setToggleMenu(!toggleMenu);
@@ -63,7 +55,7 @@ const Navbar = () => {
             <img src={logo} className="navbar__high__img--logo" alt="alt narvar"></img>
           </div>
           <div className="navbar__high__block">
-            <input onKeyPress={(event) => inputHandler(event)}
+            <input onKeyPress={(event) => props.inputHandler(event)}
               className="navbar__high__input"
               placeholder="Buscar productos, marcas y más..."></input>
             <div className="navbar__high__block__icon">
@@ -100,7 +92,6 @@ const Navbar = () => {
         </div>
       </>
       {renderMenuNavbar}
-      {<ProductComponent arrayProducts={arrayProducts} />}
     </nav >
   )
 }

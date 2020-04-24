@@ -19,7 +19,9 @@ class SliderPrimary extends PureComponent {
 
   componentDidMount = async () => {
     const response = await Axios.get(this.props.products);
-    this.setState({ products: response.data.results });
+    console.log(response.data.data);
+
+    this.setState({ products: response.data.data });
   }
 
   showsHeightHandler = (index) => {

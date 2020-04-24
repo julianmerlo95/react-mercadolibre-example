@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Product.sass';
+import { ContextProvider, Context } from '../../../../context/Context';
 
 const Product = (props) => {
-  const { thumbnail, price, title, index,
+  const { arrayProducts, thumbnail, price, title, index,
     showsHeightHandler, hiddenHeightHandler,
     showHover, shipping } = props;
 
