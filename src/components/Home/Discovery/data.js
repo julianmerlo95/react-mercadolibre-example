@@ -3,7 +3,6 @@ import discovery2 from '../../../assets/img/discovery/discovery2.webp';
 import discovery3 from '../../../assets/img/discovery/discovery3.webp';
 import discovery4 from '../../../assets/img/discovery/discovery4.webp';
 
-
 const arrayDiscovery = [
   {
     textClass: "discovery__blocks__content",
@@ -20,6 +19,5 @@ const arrayDiscovery = [
     image: discovery2
   },
 ];
-
 
 export { discovery1, discovery2, discovery3, discovery4, arrayDiscovery };

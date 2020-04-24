@@ -5,7 +5,6 @@ import imgCarrouselPrimary3 from '../../../assets/img/sliderPrimary/imgCarrousel
 import imgCarrouselPrimary4 from '../../../assets/img/sliderPrimary/imgCarrouselPrimary4.webp';
 import imgCarrouselPrimary5 from '../../../assets/img/sliderPrimary/imgCarrouselPrimary5.webp';
 
-
 const settings = {
   infinite: true,
   speed: 500,
@@ -16,7 +15,5 @@ const settings = {
 
 const arrayImg = [imgCarrouselPrimary1, imgCarrouselPrimary2,
   imgCarrouselPrimary3, imgCarrouselPrimary4, imgCarrouselPrimary5];
-
-
 
 export { settings, arrayImg };

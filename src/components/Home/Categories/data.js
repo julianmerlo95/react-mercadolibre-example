@@ -1,5 +1,3 @@
-
-
 const arrayCategories = [
   {
     title: "Autos, Motos y Otros",

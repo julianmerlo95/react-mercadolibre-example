@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 import './MercadoLibre.sass';
 import {
   RecommendationsProducts, Discovery,
@@ -6,10 +6,8 @@ import {
   Payments, SliderPrimary, Layout
 } from './data';
 
-class MercadoLibre extends Component {
-
+class MercadoLibre extends PureComponent {
   render() {
-
     return (
       <>
         <Layout>

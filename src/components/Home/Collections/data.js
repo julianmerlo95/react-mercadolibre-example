@@ -8,7 +8,7 @@ import collections6 from '../../../assets/img/collection/collections6.jpg';
 import collections7 from '../../../assets/img/collection/collections7.jpg';
 import collections8 from '../../../assets/img/collection/collections8.jpg';
 
-
-const arrayImg = [collections1, collections2, collections3, collections4, collections5, collections6, collections7, collections8];
+const arrayImg = [collections1, collections2, collections3,
+  collections4, collections5, collections6, collections7, collections8];
 
 export { deFiesta, arrayImg };

@@ -3,7 +3,6 @@ import { arrayFooter, arrayFooterList } from './data';
 import { Context } from '../../../context/Context';
 import './Footer.sass'
 
-
 const Footer = () => {
 
   const context = useContext(Context);

@@ -1,6 +1,4 @@
-
-const user = ""
-
+import logoUser from '../../../../assets/img/navbarMobile/img.png'
 
 const arrayList = [
   {
@@ -64,4 +62,4 @@ const arrayListThree = [
 ]
 
 
-export { user, arrayList, arrayListTwo, arrayListThree }
+export { logoUser, arrayList, arrayListTwo, arrayListThree }

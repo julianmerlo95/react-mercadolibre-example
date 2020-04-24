@@ -5,9 +5,8 @@ import settings from './data';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Product from './Product/Product';
 import './RecommendationsProducts.sass'
-
+import Product from './Product/Product';
 
 class SliderPrimary extends PureComponent {
 
@@ -19,8 +18,6 @@ class SliderPrimary extends PureComponent {
 
   componentDidMount = async () => {
     const response = await Axios.get(this.props.products);
-    console.log(response.data.data);
-
     this.setState({ products: response.data.data });
   }
 
@@ -37,7 +34,7 @@ class SliderPrimary extends PureComponent {
 
     if (this.state.products) {
       products = (
-        <div className="products">
+        <section className="products">
           <>
             <div className=" product__leyend style-font">
               <h4 className={`style-font product__leyend__title${false === true ? '__night' : ""}`}>
@@ -61,7 +58,7 @@ class SliderPrimary extends PureComponent {
               )
             })}
           </Slider>
-        </div>
+        </section>
       )
     }
 
@@ -76,7 +73,7 @@ class SliderPrimary extends PureComponent {
 Product.propTypes = {
   title: PropTypes.string,
   thumbnail: PropTypes.string,
-  price: PropTypes.number,
+  price: PropTypes.string,
   shipping: PropTypes.Boolean,
 }
 

@@ -1,20 +1,22 @@
-import React from 'react';
+import React, { PureComponent } from 'react';
 import { BrowserRouter } from 'react-router-dom';
 import { Navbar, Footer } from './data';
 
-const Layout = (props) => {
-  const { children } = props;
-  return (
-    <>
-      <BrowserRouter>
-        <Navbar />
-      </BrowserRouter>
+class Layout extends PureComponent {
+  render() {
+    const { children } = this.props;
+    return (
       <>
-        {children}
+        <BrowserRouter>
+          <Navbar />
+        </BrowserRouter>
+        <>
+          {children}
+        </>
+        <Footer />
       </>
-      <Footer />
-    </>
-  )
+    )
+  }
 }
 
 export default Layout;
