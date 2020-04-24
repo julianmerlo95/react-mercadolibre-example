@@ -18,7 +18,7 @@ class SliderPrimary extends Component {
           {arrayImg.map((item, index) =>
             <div key={index}>
               <img className={`carrousel__img${this.context.toggleMood === true ? '--background' : ""}`}
-                src={item} alt="alt sliderPrimary"></img>
+                src={item} alt="SliderPrimary"></img>
             </div>)}
         </Slider>
       </section>

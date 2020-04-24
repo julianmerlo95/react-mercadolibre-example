@@ -15,7 +15,7 @@ const Footer = () => {
           return (
             <div className={`footer__block__above__shipping${toggleMood === true ? '__night' : ""}`} key={index}>
               <img className={`footer__block__above__shipping__img${toggleMood === true ? '__night' : ""}`}
-                src={item.img} alt="img footer"></img>
+                src={item.img} alt="Footer"></img>
               <h4 className={`style-font footer__block__above__shipping__title${toggleMood === true ? '__night' : null}`} >
                 {item.title}</h4>
               <p className={`style-font footer__block__above__shipping__description--primary${toggleMood === true ? '__night' : null}`}>

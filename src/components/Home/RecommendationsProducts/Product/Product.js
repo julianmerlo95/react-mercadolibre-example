@@ -19,7 +19,7 @@ const Product = (props) => {
           {showHover === index ?
             <span className="product_block__icon--love"><i className="far fa-heart"></i></span>
             : null}
-          <img className="product_block__img" src={thumbnail} alt="alt product"></img>
+          <img className="product_block__img" src={thumbnail} alt="Product"></img>
           <h3 className="product_block__price ">${price.split(',', 1)}</h3>
           <p className={`style-font 
           product_block__description--hidden${showHover === index ? '-show' : ""}`}>

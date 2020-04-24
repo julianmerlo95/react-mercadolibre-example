@@ -10,7 +10,7 @@ const Collections = () => {
       </div>
       <div className="collections__block">
         <div className=" collections__block__left">
-          <img className="collections__block__left__img" src={deFiesta} alt="alt collections"></img>
+          <img className="collections__block__left__img" src={deFiesta} alt="Collections"></img>
           <div>
             <h5 className="collections__block__left__title">Descubri</h5>
             <h4 className="collections__block__left__description">De fiesta</h4>
@@ -18,7 +18,7 @@ const Collections = () => {
         </div>
         <div className="collections__block__right">
           {arrayImg.map((img, index) => <img className="collections__block__right__img"
-            key={index} src={img} alt="alt collections"></img>)}
+            key={index} src={img} alt="Collections"></img>)}
         </div>
       </div>
     </section>

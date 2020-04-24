@@ -7,7 +7,7 @@ const MenuNavbar = () => {
     <div className="menu">
       <div className="menu__date__personal">
         <div className="menu__date__personal__left">
-          <img alt="img navbar" className="menu__date__personal__left__img" src={logoUser}></img>
+          <img alt="MenuNavbar" className="menu__date__personal__left__img" src={logoUser}></img>
         </div>
         <div className="menu__date__personal__right">
           <h3 className="menu__date__personal__right__title style-font">Hola Juan</h3>
