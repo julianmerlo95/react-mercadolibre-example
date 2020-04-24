@@ -19,7 +19,7 @@ class Navbar extends PureComponent {
 
   render() {
 
-    const { toggleMenu } = this.props;
+    const { toggleMenu } = this.state;
 
     let renderMenuNavbar = false;
 
