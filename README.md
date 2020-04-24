@@ -4,6 +4,7 @@
 
 #### Esta totalmente adaptada a celulares y escritorio. (Por el momento no esta adaptada a tablet)
 
+## Esta app esta consumiendo una app Node para las llamadas con Axios.
 
 Estructura de la pagina 
 
@@ -24,9 +25,6 @@ Estructura de la pagina
     - -----------------------MenuNavbar
     - -----------------RecommendationsProducts
     - --------------------------------------- Product
-    - ------------Search
-    - ------------------Products
-    - --------------------------Product
     - ---containers
     - -------------Layout
     - ---contex
@@ -40,19 +38,16 @@ Conceptos que se implementaron en el proyecto
 - axios
 - routas
 - propsType
-- context (proximamente)
+- context
+- sass
 - metodologia en estilos css: bem
+- los componentes que modifican el renderizado de la app, estan creados con Class (PureComponent)
 - ciclos de renderizado: componentDidMount
 - componentes: stateful component, componentes stateless, pure component, componentes de orden superior (hoc).
-- metodologia en la implementacion de la pagina: movile first
+- metodologia en la implementacion de la pagina: mobile first
 ```
 
 #### Si clona el repositorio, no se olvide de ejecutar npm install, para instalar las dependencias
 ```
 npm install o npm i
-```
-
-
-# Proximo sprint:
-## - Implementar context
-## - Implementar sass
+``
