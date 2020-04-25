@@ -23,6 +23,7 @@ Estructura de la pagina
     - -----------------CategoriesCircle
     - -----------------Navbar
     - -----------------------MenuNavbar
+    - -----------------------Shop
     - -----------------RecommendationsProducts
     - --------------------------------------- Product
     - ---containers
@@ -36,14 +37,13 @@ Conceptos que se implementaron en el proyecto
 - state
 - eventos
 - axios
-- routas
 - propsType
 - context
 - sass
 - metodologia en estilos css: bem
 - los componentes que modifican el renderizado de la app, estan creados con Class (PureComponent)
 - ciclos de renderizado: componentDidMount
-- componentes: stateful component, componentes stateless, pure component, componentes de orden superior (hoc).
+- componentes: stateful component, componentes stateless, PureComponent, componentes de orden superior (hoc).
 - metodologia en la implementacion de la pagina: mobile first
 ```
 
