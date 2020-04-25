@@ -5,6 +5,12 @@
   z-index: 100
   margin: 0
   transition: 1s
+  -webkit-width: 100%
+  -webkit-z-index: 100
+  -webkit-transition: 1s
+  -moz-width: 100%
+  -moz-z-index: 100
+  -moz-transition: 1s
 
   &__date__personal
     display: $box-display-global
@@ -12,22 +18,48 @@
     padding: 10px
     background-color: $text-color-three
     margin-top: 15px
+    -webkit-display: $box-display-global
+    -webkit-margin-top: 15px
+    -webkit-background: white
+    -webkit-padding: 10px
+    -moz-display: $box-display-global
+    -moz-margin-top: 15px
+    -moz-background: white
+    -moz-padding: 10px
 
 .menu__date__personal__left
   width: 30%
   display: $box-display-global
   justify-content: center
+  -webkit-width: 30%
+  -webkit-display: $box-display-global
+  -webkit-justify-content: center
+  -moz-width: 30%
+  -moz-display: $box-display-global
+  -moz-justify-content: center
 
   &__img
     width: 50%
     border-radius: 50px
     background: rgb(228, 228, 228)
     border: 3px solid rgb(106, 156, 230)
+    -webkit-width: 50%
+    -webkit-border-radius: 50px
+    -webkit-background: rgb(228, 228, 228)
+    -moz-width: 50%
+    -moz-border-radius: 50px
+    -moz-background: rgb(228, 228, 228)
 
 .menu__date__personal__right__title
   font-size: 14px!important
   text-align: left!important
   margin-bottom: 0%
+  -webkit-font-size: 14px!important
+  -webkit-text-align: left!important
+  -webkit-margin-bottom: 0%
+  -moz-font-size: 14px!important
+  -moz-text-align: left!important
+  -moz-margin-bottom: 0%
 
 .menu__date__personal__right__mercado__pago
   font-size: 16px!important
@@ -63,5 +95,6 @@
     margin-left: 6%
     font-size: 14px
 
-@media screen and ( min-width:426px)
-  display: none
+@media only screen and(min-width: 426px)
+  .menu
+    display: none
