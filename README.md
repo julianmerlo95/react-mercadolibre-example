@@ -23,6 +23,7 @@ Estructura de la pagina
     - -----------------CategoriesCircle
     - -----------------Navbar
     - -----------------------MenuNavbar
+    - -----------------------Shop
     - -----------------RecommendationsProducts
     - --------------------------------------- Product
     - ---containers
