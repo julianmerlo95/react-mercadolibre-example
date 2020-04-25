@@ -4,20 +4,20 @@
   display: $box-display-global
   justify-content: flex-start
 
-.product__leyend__title
-  margin-left: 1%
-  height: 100%
+  &__title
+    margin-left: 1%
+    height: 100%
 
-.product__leyend__description
-  color: $text-color-secondary
-  margin: 23px 10px 0px 10px
-  cursor: pointer
-  font-size: $font-size-primary
-  height: 100%
+  &__description
+    color: $text-color-secondary
+    margin: 23px 10px 0px 10px
+    cursor: pointer
+    font-size: $font-size-primary
+    height: 100%
 
-.product__leyend__title
-  letter-spacing: 1px
-  font-size: 26px
+  &__title
+    letter-spacing: 1px
+    font-size: 26px
 
 .product_block
   margin-right: 5px
@@ -29,55 +29,55 @@
   transition: 0.5s
   cursor: pointer
 
-.product_block-show:hover
-  cursor: pointer
-  box-shadow: $box-shadow-hover
-
-.product_block-show
-  margin-right: 5px
-  background-color: white
-  margin: 8px
-  height: 325px
-  box-shadow: $box-shadow
-  border-radius: 5px
-  transition: 0.5s
-  cursor: pointer
-
-.product_block__img
-  width: 97%
-  object-fit: contain
-  display: block
-  margin: $box-margin-global
-  height: 224px
-  border-bottom: 1px solid rgb(209, 209, 209)
-
-.product_block__price
-  padding-left: 7px
-  padding-top: 5px
-  margin: 3%
-  margin-left: 13%
-  box-sizing: border-box
-  color: black
-  font-size: 24px
-  font-weight: 500!important
-  font-family: 'Manrope', sans-serif
-
-.product_block__description--hidden
-  margin: 0% auto
-  width: 80%
-  text-align: center
-  display: none
-  transition: 0.5s
+  &-show:hover
+    cursor: pointer
+    box-shadow: $box-shadow-hover
 
   &-show
-    width: 100%
-    padding: 1px
+    margin-right: 5px
+    background-color: white
+    margin: 8px
+    height: 325px
+    box-shadow: $box-shadow
+    border-radius: 5px
+    transition: 0.5s
+    cursor: pointer
+
+  &__img
+    width: 97%
+    object-fit: contain
+    display: block
     margin: $box-margin-global
-    text-align: center
-    display: inline-block
+    height: 224px
+    border-bottom: 1px solid rgb(209, 209, 209)
+
+  &__price
+    padding-left: 7px
+    padding-top: 5px
+    margin: 3%
+    margin-left: 13%
+    box-sizing: border-box
     color: black
-    transition: 1s
-    font-size: 13px
+    font-size: 24px
+    font-weight: 500!important
+    font-family: 'Manrope', sans-serif
+
+  &__description--hidden
+    margin: 0% auto
+    width: 80%
+    text-align: center
+    display: none
+    transition: 0.5s
+
+    &-show
+      width: 100%
+      padding: 1px
+      margin: $box-margin-global
+      text-align: center
+      display: inline-block
+      color: black
+      transition: 1s
+      font-size: 13px
 
 .product_block__icon--love
   position: absolute
@@ -168,6 +168,9 @@
       color: black
       transition: 1s
       font-size: 13px
+
+  .product_block-show:hover
+    box-shadow: $box-shadow
 
 @media (max-width: 400px)
   .product_block__icon--truck,
