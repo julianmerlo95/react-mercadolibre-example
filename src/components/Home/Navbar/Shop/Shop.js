@@ -5,8 +5,8 @@ const Shop = () => {
   return (
     <div className="shop">
       <div className="shop__title">
-        <h3 className="style-font shop__title__cart">Carrito(0)</h3>
-        <h3 className="style-font">Guardados(0)</h3>
+        <h3 className="style-font shop__title__cart">Carrito (0)</h3>
+        <h3 className="style-font">Guardados (0)</h3>
       </div>
       <div className="shop__center">
         <div>

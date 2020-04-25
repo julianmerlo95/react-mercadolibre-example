@@ -124,10 +124,50 @@
   .product_block__icon
     margin-left: 140px
 
-  .product_block__icon--truck
-    position: absolute
-    margin-left: 145px
-    margin-top: 206px
+    &--truck
+      position: absolute
+      margin-left: 145px
+      margin-top: 206px
+
+  .product_block
+    margin-right: 5px
+    background-color: white
+    margin: 8px
+    height: 320px
+    box-shadow: $box-shadow
+    border-radius: 5px
+    transition: 0.5s
+    cursor: pointer
+
+    &-show
+      margin-right: 5px
+      background-color: white
+      margin: 8px
+      height: 320px
+      border-radius: 5px
+      transition: 0.5s
+      cursor: pointer
+
+  .product_block__description--hidden
+    display: inline
+    width: 100%
+    padding: 1px
+    margin: $box-margin-global
+    text-align: center
+    display: inline-block
+    color: black
+    transition: 1s
+    font-size: 13px
+
+    &-show
+      width: 100%
+      padding: 1px
+      margin: $box-margin-global
+      text-align: center
+      display: inline-block
+      color: black
+      transition: 1s
+      font-size: 13px
 
 @media (max-width: 400px)
   .product_block__icon--truck,

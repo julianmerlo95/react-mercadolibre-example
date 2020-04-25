@@ -6,7 +6,6 @@ import "slick-carousel/slick/slick-theme.css";
 import { settings, arrayImg } from './data';
 import { Context } from '../../../context/Context';
 
-
 class SliderPrimary extends Component {
 
   static contextType = Context;

@@ -53,7 +53,7 @@ class MercadoLibre extends PureComponent {
           <Categories />
 
           <RecommendationsProducts
-            products="iphone"
+            products="samsung"
             leyend="Tu historial"
             leyendAdici="Ver historial completo" />
         </Layout>

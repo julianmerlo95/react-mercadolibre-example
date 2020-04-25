@@ -28,7 +28,6 @@ class Navbar extends PureComponent {
     const { toggleMenu, toggleShop } = this.state;
 
     let renderMenuNavbar = false;
-    // let renderShopNavbar = false;
 
     if (toggleMenu) {
       this.setState({ toggleShop: false });
@@ -53,7 +52,7 @@ class Navbar extends PureComponent {
           <div className="navbar__high__block__hidden">
             <div className="navbar__high__left__hidden">
               <svg onClick={this.menuHandler}
-                className={`navbar__high__icon__hidden fas fa${toggleMenu === false ? '-bars' : '-times'}`}
+                className={`navbar__high__icon__hidden ${toggleMenu === false ? '-bars' : '-times'}`}
                 xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
                 <path d="M0 0h24v24H0V0z" fill="none" /><path d={`${toggleMenu === false ? `${order}` : `${cross}`}`} />
               </svg>
@@ -64,7 +63,7 @@ class Navbar extends PureComponent {
             </div>
             <div className="navbar__high__right__hidden">
               <svg onClick={this.shopHandler}
-                className={`navbar__high__icon__hidden fas fa$`}
+                className={`navbar__high__icon__hidden`}
                 xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
                 <path d="M0 0h24v24H0V0z" fill="none" /><path d={shop} />
               </svg>
@@ -122,9 +121,11 @@ class Navbar extends PureComponent {
               {arrayListDownRight.map((item, index) =>
                 <div key={index} className="navbar__down__list__container">
                   <li key={index} className="navbar__down__list--right__item">{item.name}</li>
-                  <svg className={`navbar__down__list--center__icon`}
-                    xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -5 24 24" width="23">
-                    <path d="M0 0h24v24H0V0z" fill="none" /><path d={item.icon} /></svg>
+                  <NavLink to="prueba">
+                    <svg className={`navbar__down__list--center__icon`}
+                      xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -5 24 24" width="23">
+                      <path d="M0 0h24v24H0V0z" fill="none" /><path d={item.icon} /></svg>
+                  </NavLink>
                 </div>
               )}
             </ul>

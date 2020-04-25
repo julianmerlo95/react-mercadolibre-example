@@ -17,8 +17,12 @@ class SliderPrimary extends PureComponent {
   }
 
   componentDidMount = async () => {
-    const response = await Axios.get(this.props.products);
-    this.setState({ products: response.data.data });
+    try {
+      const response = await Axios.get(this.props.products);
+      this.setState({ products: response.data.data });
+    } catch (error) {
+      return error;
+    }
   }
 
   showsHeightHandler = (index) => {
@@ -45,16 +49,18 @@ class SliderPrimary extends PureComponent {
           <Slider {...settings} >
             {this.state.products.map((product, index) => {
               return (
-                <Product
-                  thumbnail={product.thumbnail}
-                  price={new Intl.NumberFormat("de-AR").format(product.price)}
-                  title={product.title}
-                  showsHeightHandler={() => this.showsHeightHandler(index)}
-                  hiddenHeightHandler={this.hiddenHeightHandler}
-                  showHover={this.state.showHover}
-                  index={index}
-                  shipping={product.shipping.free_shipping}
-                />
+                <div key={index}>
+                  <Product
+                    thumbnail={product.thumbnail}
+                    price={new Intl.NumberFormat("de-AR").format(product.price)}
+                    title={product.title}
+                    showsHeightHandler={() => this.showsHeightHandler(index)}
+                    hiddenHeightHandler={this.hiddenHeightHandler}
+                    showHover={this.state.showHover}
+                    index={index}
+                    shipping={product.shipping.free_shipping}
+                  />
+                </div>
               )
             })}
           </Slider>

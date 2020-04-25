@@ -61,5 +61,4 @@ const arrayListThree = [
   }
 ]
 
-
 export { logoUser, arrayList, arrayListTwo, arrayListThree }
