@@ -1,4 +1,4 @@
-import logoUser from '../../../../assets/img/navbarMobile/img.png'
+import logoUser from '../../../../assets/img/navbarMobile/userIcon.png'
 
 const arrayList = [
   {

@@ -1,9 +1,9 @@
 
-import imgCarrouselPrimary1 from '../../../assets/img/sliderPrimary/imgCarrouselPrimary1.webp';
-import imgCarrouselPrimary2 from '../../../assets/img/sliderPrimary/imgCarrouselPrimary2.webp';
-import imgCarrouselPrimary3 from '../../../assets/img/sliderPrimary/imgCarrouselPrimary3.webp';
-import imgCarrouselPrimary4 from '../../../assets/img/sliderPrimary/imgCarrouselPrimary4.webp';
-import imgCarrouselPrimary5 from '../../../assets/img/sliderPrimary/imgCarrouselPrimary5.webp';
+import imgCarrouselPrimary1 from '../../../assets/img/sliderPrimary/imgCarrouselPrimary1.png';
+import imgCarrouselPrimary2 from '../../../assets/img/sliderPrimary/imgCarrouselPrimary2.png';
+import imgCarrouselPrimary3 from '../../../assets/img/sliderPrimary/imgCarrouselPrimary3.png';
+import imgCarrouselPrimary4 from '../../../assets/img/sliderPrimary/imgCarrouselPrimary4.png';
+import imgCarrouselPrimary5 from '../../../assets/img/sliderPrimary/imgCarrouselPrimary5.png';
 
 const settings = {
   infinite: true,

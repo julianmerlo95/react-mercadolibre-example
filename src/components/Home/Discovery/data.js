@@ -1,7 +1,7 @@
-import discovery1 from '../../../assets/img/discovery/discovery1.webp';
-import discovery2 from '../../../assets/img/discovery/discovery2.webp';
-import discovery3 from '../../../assets/img/discovery/discovery3.webp';
-import discovery4 from '../../../assets/img/discovery/discovery4.webp';
+import discovery1 from '../../../assets/img/discovery/discovery1.png';
+import discovery2 from '../../../assets/img/discovery/discovery2.png';
+import discovery3 from '../../../assets/img/discovery/discovery3.png';
+import discovery4 from '../../../assets/img/discovery/discovery4.png';
 
 const arrayDiscovery = [
   {
