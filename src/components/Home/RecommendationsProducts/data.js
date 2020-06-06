@@ -1,5 +1,6 @@
 const settings = {
   arrow: true,
+  dots: false,
   infinite: true,
   speed: 500,
   slidesToShow: 5,
@@ -11,7 +12,6 @@ const settings = {
         slidesToShow: 3,
         slidesToScroll: 3,
         infinite: true,
-        dots: true
       }
     },
     {
